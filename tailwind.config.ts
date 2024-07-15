@@ -9,6 +9,11 @@ export default {
         sans: ['var(--font-geist-sans)'],
         mono: ['var(--font-geist-mono)'],
       },
+      screens: {
+        '3xl': '1920px',
+        '4xl': '2560px',
+        '5xl': '3840px'
+     },
       typography: {
         quoteless: {
           css: {

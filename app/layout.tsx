@@ -10,15 +10,15 @@ import { SandpackCSS } from './blog/[slug]/sandpack';
 export const metadata: Metadata = {
   metadataBase: new URL('https://leerob.io'),
   title: {
-    default: 'Lee Robinson',
-    template: '%s | Lee Robinson',
+    default: 'Myrrh.me',
+    template: '%s | Myrrh.me',
   },
   description: 'Developer, writer, and creator.',
   openGraph: {
-    title: 'Lee Robinson',
+    title: 'Meir Arani',
     description: 'Developer, writer, and creator.',
-    url: 'https://leerob.io',
-    siteName: 'Lee Robinson',
+    url: 'https://myrrh.me',
+    siteName: 'Meir\'s Site',
     locale: 'en_US',
     type: 'website',
   },
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: 'Lee Robinson',
+    title: 'Meir\'s site',
     card: 'summary_large_image',
   },
   verification: {
@@ -54,7 +54,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={cx(
-        'text-black bg-white dark:text-white dark:bg-[#111010]',
+        'text-black bg-gradient-to-r from-pink-300 via-violet-300 to-blue-300 dark:text-white dark:bg-[#111010]',
         GeistSans.variable,
         GeistMono.variable
       )}
@@ -62,7 +62,7 @@ export default function RootLayout({
       <head>
         <SandpackCSS />
       </head>
-      <body className="antialiased max-w-2xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto">
+      <body className="antialiased max-w-full mb-40 flex flex-col md:flex-row mx-4 mt-2 lg:mx-20">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           <Navbar />
           {children}
