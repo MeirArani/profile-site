@@ -5,9 +5,6 @@ export const sql = postgres(process.env.POSTGRES_URL, {
 });
 
 const nextConfig = {
-  experimental: {
-    ppr: true,
-  },
   logging: {
     fetches: {
       fullUrl: true,
@@ -45,7 +42,7 @@ const ContentSecurityPolicy = `
     script-src 'self' 'unsafe-eval' 'unsafe-inline' cdn.vercel-insights.com vercel.live va.vercel-scripts.com;
     style-src 'self' 'unsafe-inline';
     img-src * blob: data:;
-    media-src 'none';
+    media-src 'self' blob: data:;
     connect-src *;
     font-src 'self' data:;
     frame-src 'self' *.codesandbox.io vercel.live;
