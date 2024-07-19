@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profileImg from '../public/me_square.webp'
+import profileImg from '../public/photos/multiples1.webp'
 
 export default function Page() {
   return (
