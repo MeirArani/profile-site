@@ -1,5 +1,7 @@
 import Image from "next/image";
 import profileImg from '../../public/me_work.webp'
+import oceanSuite from '../../public/music/ocean_suite/folder.png'
+import tenjinText from '../../public/games/tenjin_text_placeholder.png'
 
 export default function Page() {
   return (
@@ -9,6 +11,24 @@ export default function Page() {
             <h2 className="font text-4xl">Completed</h2>
             <div>
                 <h3 className="font font-light text-3xl"><i>Tenjin Dash</i></h3>
+                <div className="relative mt-1 mb-2 w-screen h-52 bg-slate-300 ml-[-1.5rem]">
+                    <Image 
+                src={oceanSuite} 
+                alt="Ocean Suite album art"
+                fill
+                className="w-full h-full object-cover"
+                ></Image>
+                
+                <Image
+                
+                src={tenjinText}
+                    alt="Tenjin Dash logo placeholder"
+                    className="absolute w-3/4 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    
+                </Image>
+
+                </div>
+                <h4 className="prose prose-gray">A race through the streets of Tenjin where you are the controller. Inspired by exercise-oriented game design of <i>World Class Track Meet</i> and <i>Wii Fit</i>.</h4>
             </div>
         </div>
         <div>
