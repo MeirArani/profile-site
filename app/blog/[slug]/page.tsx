@@ -23,8 +23,8 @@ export async function generateMetadata({
     image,
   } = post.metadata;
   let ogImage = image
-    ? `https://leerob.io${image}`
-    : `https://leerob.io/og?title=${title}`;
+    ? ``
+    : ``;
 
   return {
     title,
@@ -34,7 +34,7 @@ export async function generateMetadata({
       description,
       type: 'article',
       publishedTime,
-      url: `https://leerob.io/blog/${post.slug}`,
+      url: `http://localhost:3000/blog/${post.slug}`,
       images: [
         {
           url: ogImage,
@@ -84,7 +84,7 @@ function formatDate(date: string) {
 
 export default function Blog({ params }) {
   let post = getBlogPosts().find((post) => post.slug === params.slug);
-
+  console.log(post);
   if (!post) {
     notFound();
   }
@@ -103,9 +103,9 @@ export default function Blog({ params }) {
             dateModified: post.metadata.publishedAt,
             description: post.metadata.summary,
             image: post.metadata.image
-              ? `https://leerob.io${post.metadata.image}`
-              : `https://leerob.io/og?title=${post.metadata.title}`,
-            url: `https://leerob.io/blog/${post.slug}`,
+              ? `http://localhost:3000/${post.metadata.image}`
+              : `http://localhost:3000/og?title=${post.metadata.title}`,
+            url: `http://localhost:3000/blog/${post.slug}`,
             author: {
               '@type': 'Person',
               name: 'Lee Robinson',

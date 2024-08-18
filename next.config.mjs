@@ -38,7 +38,7 @@ const nextConfig = {
 };
 
 const ContentSecurityPolicy = `
-    default-src 'self' vercel.live;
+    default-src 'self' data: vercel.live;
     script-src 'self' 'unsafe-eval' 'unsafe-inline' cdn.vercel-insights.com vercel.live va.vercel-scripts.com;
     style-src 'self' 'unsafe-inline';
     img-src * blob: data:;
