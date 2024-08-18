@@ -13,9 +13,6 @@ const navItems = {
   '/photography': {
     name: 'photography',
   },
-  '/blog': {
-    name: 'writings',
-  },
   '/music': {
     name: 'music',
   },

@@ -1,9 +1,14 @@
 'use client'
 import Image from "next/image";
-import { AudioPlayer } from 'react-audio-player-component';
 import oceanSuite from '../../public/music/ocean_suite/folder.png'
 import waiting from '../../public/music/waiting/waiting.webp'
 import contrition from '../../public/music/contrition/cover.webp'
+
+import dynamic from 'next/dynamic'
+ 
+const AudioPlayer = dynamic(() => import('react-audio-player-component').then((mod) => mod.AudioPlayer), {
+  ssr: false,
+})
 
 const OceanPlayer = () => (
   <AudioPlayer 
@@ -46,7 +51,6 @@ const RitualPlayer = () => (
       barPlayedColor="#adaeae"
     />
   );
-  
 
 export default function Page() {
   return (

@@ -5,7 +5,6 @@ import { GeistMono } from 'geist/font/mono';
 import { Navbar } from './components/nav';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import { SandpackCSS } from './blog/[slug]/sandpack';
 
 export const metadata: Metadata = {
   metadataBase: new URL('http://localhost:3000'),
@@ -60,7 +59,6 @@ export default function RootLayout({
       )}
     >
       <head>
-        <SandpackCSS />
       </head>
       <body className="antialiased max-w-full mb-20 flex flex-col md:flex-row mx-4 mt-2 lg:mx-20">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
