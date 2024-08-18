@@ -37,5 +37,8 @@
   },
   "prettier": {
     "singleQuote": true
+  },
+  "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.2"
   }
 }

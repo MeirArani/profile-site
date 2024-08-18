@@ -1,4 +1,5 @@
 import postgres from 'postgres';
+import { setupDevPlatform } from '@cloudflare/next-on-pages/next-dev';
 
 export const sql = postgres(process.env.POSTGRES_URL, {
   ssl: 'allow',
@@ -78,5 +79,9 @@ const securityHeaders = [
     value: 'camera=(), microphone=(), geolocation=()',
   },
 ];
+
+if (process.env.NODE_ENV === 'development') {
+  await setupDevPlatform();
+}
 
 export default nextConfig;
