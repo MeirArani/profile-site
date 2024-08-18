@@ -50,6 +50,9 @@
     "@cloudflare/next-on-pages": "^1.13.2",
     "eslint-plugin-next-on-pages": "^1.13.2"
   },
+  "resolutions": { 
+    "string-width": "4.2.3" 
+  },
   "trustedDependencies": [
     "@vercel/speed-insights",
     "es5-ext"
