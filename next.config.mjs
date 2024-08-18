@@ -12,9 +12,10 @@ const nextConfig = {
     },
   },
   webpack: (config, options) => {
-    config.resolve.fallback.push({
-      https: false
-    });
+    config.resolve.fallback = {
+      https: false,
+      crypto: false
+    };
     return config;
   },
   transpilePackages: ['next-mdx-remote'],
