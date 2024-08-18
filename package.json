@@ -49,5 +49,9 @@
   "devDependencies": {
     "@cloudflare/next-on-pages": "^1.13.2",
     "eslint-plugin-next-on-pages": "^1.13.2"
-  }
+  },
+  "trustedDependencies": [
+    "@vercel/speed-insights",
+    "es5-ext"
+  ]
 }
