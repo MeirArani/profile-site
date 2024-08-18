@@ -11,6 +11,12 @@ const nextConfig = {
       fullUrl: true,
     },
   },
+  webpack: (config, options) => {
+    config.resolve.fallback.push({
+      https: false
+    });
+    return config;
+  },
   transpilePackages: ['next-mdx-remote'],
   async redirects() {
     if (!process.env.POSTGRES_URL) {
