@@ -129,8 +129,8 @@ function slugify(str) {
     .replace(/\-\-+/g, '-'); // Replace multiple - with single -
 }
 
-export default function createHeading(level) {
-  return ({children}) => {
+function createHeading(level) {
+  return ({ children }) => {
     let slug = slugify(children);
     return React.createElement(
       `h${level}`,

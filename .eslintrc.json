@@ -6,5 +6,8 @@
     "plugins": [
       "eslint-plugin-next-on-pages"
     ],
-    "rules": { "react/no-unescaped-entities": 0 }
+    "rules": { 
+      "react/no-unescaped-entities": 0, 
+      "react/display-name": "off" 
+    }
   }
