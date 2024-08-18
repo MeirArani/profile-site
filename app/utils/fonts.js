@@ -13,7 +13,7 @@ export const roboto_mono = Roboto_Mono({
 })
 
 export const reggaeOne = Reggae_One({
-    subsets: ['latin', 'japanese'],
+    subsets: ['latin'],
     weight: ['400'],
     display: 'swap',
 })
