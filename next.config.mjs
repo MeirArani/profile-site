@@ -14,7 +14,9 @@ const nextConfig = {
   webpack: (config, options) => {
     config.resolve.fallback = {
       https: false,
-      crypto: false
+      crypto: false,
+      http: false,
+      stream: false
     };
     return config;
   },
