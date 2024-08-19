@@ -25,14 +25,14 @@ export default function Page() {
         I'm an artist, aspiring game designer, and graduate student at Kyushu University.
         I also&nbsp;
         <a href="/games">develop games</a>,&nbsp;
-        <a>shoot pictures</a>,&nbsp;
-        <a>write fiction</a>, and&nbsp;
+        <a>shoot film</a>,&nbsp;
+        {/*<a>write fiction</a>,*/}and&nbsp;
         <a>compose music</a> in my spare time. 
-        I've <a>created games for companies</a> and <a href="https://youtu.be/tx22WrInPYY?t=6602">taught an AI to write a movie</a> (before it was cool)!
+        I've <a href='/games/tenjin' target="_blank">created games for companies</a> and <a href="https://youtu.be/tx22WrInPYY?t=6602" target="_blank">taught an AI to write a movie</a> (before it was cool)!
       </p>
       <hr className="my-4 border-neutral-50"></hr>
       <p className="prose prose-neutral">
-        I'm currently researching games accessibility tech for the visually impaired&mdash;designing tools to streamline accessibility feature development. In my free time I design my own game concepts, and ocassionally find the time to develop prototypes. <a>Check out my work for more details.</a>
+        I'm currently researching games accessibility tech for the visually impaired&mdash;designing tools to streamline accessibility feature development. In my free time I design my own game concepts, and ocassionally find the time to develop prototypes. <a href="/work">Check out my work for more details.</a>
       </p>
       <ul className="font-sm w-full mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
         <li>
