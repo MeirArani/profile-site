@@ -19,9 +19,11 @@ export default function Page() {
         }}
         placeholder="blur"
         className="rounded-lg"
+        classnamedesktop="w-full"
+        classnamemobile="w-full"
         ></ResponsiveImage>
       </div>
-      <h1 className="font-medium text-3xl mb-4 tracking-tighter text-center w-fit">I'm Meir. &nbsp; Nice to meetcha.</h1>
+      <h1 className="font-medium text-3xl mb-4 tracking-tighter text-center w-fit">I'm Meir. &nbsp;Nice to meetcha.</h1>
 
       <p className="prose prose-2xlg">
         I'm an artist, aspiring game designer, and graduate student at Kyushu University.
@@ -36,7 +38,7 @@ export default function Page() {
       <p className="prose prose-neutral">
         I'm currently researching games accessibility tech for the visually impaired&mdash;designing tools to streamline accessibility feature development. In my free time I design my own game concepts, and occasionally find the time to develop prototypes. <a href="/work">Check out my work for more details.</a>
       </p>
-      <ul className="font-sm w-full mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
+      <ul className="font-sm w-full mt-5 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300 md:w-fit">
         <li>
           <a 
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"

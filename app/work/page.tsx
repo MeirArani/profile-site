@@ -1,54 +1,54 @@
 import Image from "next/image";
-import profileImg from '../../public/me_work.webp'
+import profileImg from '../../public/failgirl.webp'
 
 export default function Page() {
   return (
     <section>
-      <div className="flex flex-row w-full h-48">
-        <div className="flex flex-col w-full pl-2 mt-1">
-          <h1 className="font-medium text-4xl tracking-tighter mb-1 ml-[-1.9px]">Meir Arani</h1>
-          <div className="font-medium text-lg tracking-tighter">
-            <p className="-mt-1">Fukuoka, Japan</p>
-            <p className="-mt-1">Graduate Student</p>
-            <p className="-mt-1">Kyushu University</p>
+      <div className="flex flex-row justify-center w-full max-h-72">
+        <div className="flex flex-row justify-center content-center mb-8 items-center max-h-72">
+          <div className="flex flex-col w-fit h-fit mt-1">
+            <h1 className="w-fit font-medium xs:text-3xl text-4xl tracking-tighter mb-1 ml-[-1.9px]">Meir Arani</h1>
+            <div className="w-fit xs:text-base text-lg tracking-tighter">
+              <p className="-mt-1">Fukuoka, Japan</p>
+              <p className="-mt-1">Graduate Student</p>
+              <p className="-mt-1">Kyushu University</p>
+            </div>
+            <ul className="w-fit list-disc list-inside text-xs mt-1 mb-0.5">
+              <li>Game Design</li>
+              <li>Programming</li>
+              <li>Writing</li>
+            </ul>
+            <p className="w-fit prose">
+                <a href="mailto:myrrh@laughingstock.me">myrrh@laughingstock.me</a>
+              </p>
           </div>
-          <ul className="list-disc list-inside text-xs mt-1 mb-0.5">
-            <li>Game Design</li>
-            <li>Programming</li>
-            <li>Writing</li>
-          </ul>
-          <p className="prose">
-              <a href="mailto:myrrh@laughingstock.me">myrrh@laughingstock.me</a>
-            </p>
-        </div>
-        <div className="flex flex-row items-center -ml-4.5">
-          <div className="flex flex-col items-center">
-            <Image
-            src={profileImg} 
-            alt="Why are you hovering over this?"
-            style={{
-              //objectFit: 'cover', // cover, contain, none
-              width: '100%',
-              height: 'auto'
-            }}
-            className="rounded-full"
-            ></Image>
+          <div className="flex flex-row aspect-square items-center h-[75%] -z-10">
+            <div className="flex flex-col items-center w-full h-full">
+              <Image
+              src={profileImg} 
+              alt="Why are you hovering over this?"
+              style={{
+                //objectFit: 'cover', // cover, contain, none
+                width: '100%',
+                height: '100%'
+              }}
+              className="rounded-full"
+              ></Image>
+            </div>
           </div>
         </div>
-        
       </div>
       
-      <hr className="my-4 border-neutral-100"></hr>
-
-      <div>
-      <h1 className="font-medium font-semibold text-3xl mb-1 tracking-tighter">Education</h1>
-        <div>
-          <h2 className="font-medium text-2xl tracking-tighter">Kyushu University</h2>
-          <h3 className="font-medium text-xl tracking-tighter">Graduate School of Design</h3>
-          <p className="text-stone-950 font-light">
+      
+      <div className="">
+        <h1 className="w-fit font-medium font-semibold text-3xl mb-1 tracking-tighter">Education</h1>
+        <div className="w-fit">
+          <h2 className="w-fit font-medium text-2xl tracking-tighter">Kyushu University</h2>
+          <h3 className="w-fit font-medium text-xl tracking-tighter">Graduate School of Design</h3>
+          <p className="w-fit text-stone-950 font-light">
             2022-2025 (Expected)
           </p>
-          <p className="prose prose-stone">
+          <p className="w-fit prose prose-stone">
           I am currently pursuing a graduate degree in design, researching under&nbsp;
           <a href="https://hyoka.ofc.kyushu-u.ac.jp/search/details/K002398/english.html">Hiroyuki Matsuguma's</a>
           &nbsp;

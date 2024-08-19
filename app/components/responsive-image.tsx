@@ -4,6 +4,8 @@ import Image, { ImageProps, StaticImageData } from 'next/image'
 type Props = Omit<ImageProps, 'src' | 'priority' | 'loading'> & {
   srcMobile: StaticImageData
   srcDesktop: StaticImageData
+  classnamedesktop: string
+  classnamemobile: string
 }
  
 export const ResponsiveImage = (props: Props) => {
@@ -11,8 +13,8 @@ export const ResponsiveImage = (props: Props) => {
  
   return (
     <>
-      <Image {...rest} src={srcMobile} className={`${styles.imgMobile} ${props.className}`} />
-      <Image {...rest} src={srcDesktop} className={`${styles.imgDesktop} ${props.className}`} />
+      <Image {...rest} src={srcMobile} className={`${styles.imgMobile} ${props.className} ${props.classnamemobile}`} />
+      <Image {...rest} src={srcDesktop} className={`${styles.imgDesktop} ${props.className} ${props.classnamedesktop}`} />
     </>
   )
 }
