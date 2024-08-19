@@ -1,9 +1,16 @@
 {
     "version": "0.2",
-    "ignorePaths": ["*"],
+    "ignorePaths": [
+        ""
+    ],
     "dictionaryDefinitions": [],
     "dictionaries": [],
-    "words": [],
+    "words": [
+        "Beeler",
+        "cutscenes",
+        "gamification",
+        "salarymen"
+    ],
     "ignoreWords": [],
     "import": []
 }

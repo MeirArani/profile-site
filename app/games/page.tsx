@@ -18,7 +18,7 @@ export default function Page() {
                 <div className="relative mt-1 mb-2 w-screen h-52 bg-slate-300 ml-[-1.5rem]">
                     <Image 
                         src={tenjinBackground} 
-                        alt="Ocean Suite album art"
+                        alt="Tenjin Dash Background"
                         fill
                         className="w-full h-full object-cover blur-[2px]"
                     ></Image>
@@ -45,7 +45,7 @@ export default function Page() {
                 </a>
 
                 
-                <h4 className="prose prose-gray">A race through the streets of Tenjin where you are the controller. Inspired by exercise-oriented game design of <i>World Class Track Meet</i> and <i>Wii Fit</i>.</h4>
+                <h4 className="prose prose-gray">You are the controller in this high-octane race through the streets of Tenjin! Inspired by exercise-oriented game design of <i>World Class Track Meet</i> and<i>Wii Fit</i>.</h4>
             </div>
         </div>
         <div>

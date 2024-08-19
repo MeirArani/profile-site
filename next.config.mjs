@@ -108,7 +108,8 @@ const securityHeaders = [
   },
 ];
 
-if (process.env.NODE_ENV === 'development') {
+//May break things!
+if (process.env.npm_lifecycle_event === 'pages:build') {
   await setupDevPlatform();
 }
 
