@@ -3,7 +3,7 @@ import Image from "next/image"
 export function FallbackVideo(props) { 
   return (
     <div className="relative flex flex-col items-center -ml-6 md:-ml-4 w-screen my-4">
-      <video autoPlay muted loop preload="none" className="w-full">
+      <video autoPlay muted playsInline loop preload="none" className="w-full">
         <source src={props.location} type="video/webm" />
         <Image
           src={props.fallback}
