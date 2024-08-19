@@ -1,23 +1,25 @@
 import Image from "next/image";
-import profileImg from '../public/photos/multiples1.webp'
+import desktopImage from '../public/photos/multiples1.webp'
+import mobileImage from '../public/hanami.webp'
+import {ResponsiveImage} from './components/responsive-image'
 
 export default function Page() {
   return (
     <section className="flex flex-col items-center">
-      <h1 className="font-medium text-4xl mb-4 tracking-tighter text-center w-fit">Hi.</h1>
-      <div className="relative aspect-[3/2] mb-4 lg:-w-2/4">
-        <Image  
-      src={profileImg} 
-      alt="Hi."
-      style={{
-        //objectFit: 'cover', // cover, contain, none
-        width: '100%',
-        height: 'auto'
-      }}
-      priority={true}
-      placeholder="blur"
-      className="rounded-lg"
-      ></Image>
+      <h1 className="font-medium text-4xl tracking-tighter text-center w-fit">Hi.</h1>
+      <div className="my-4">
+        <ResponsiveImage  
+        srcDesktop={desktopImage}
+        srcMobile={mobileImage} 
+        alt="Hi."
+        style={{
+          //objectFit: 'cover', // cover, contain, none
+          width: '100%',
+          height: 'auto'
+        }}
+        placeholder="blur"
+        className="rounded-lg"
+        ></ResponsiveImage>
       </div>
       <h1 className="font-medium text-3xl mb-4 tracking-tighter text-center w-fit">I'm Meir. &nbsp; Nice to meetcha.</h1>
 
@@ -32,7 +34,7 @@ export default function Page() {
       </p>
       <hr className="my-4 border-neutral-50"></hr>
       <p className="prose prose-neutral">
-        I'm currently researching games accessibility tech for the visually impaired&mdash;designing tools to streamline accessibility feature development. In my free time I design my own game concepts, and ocassionally find the time to develop prototypes. <a href="/work">Check out my work for more details.</a>
+        I'm currently researching games accessibility tech for the visually impaired&mdash;designing tools to streamline accessibility feature development. In my free time I design my own game concepts, and occasionally find the time to develop prototypes. <a href="/work">Check out my work for more details.</a>
       </p>
       <ul className="font-sm w-full mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
         <li>
