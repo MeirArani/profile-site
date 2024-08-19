@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <section className="flex flex-col items-center">
       <h1 className="font-medium text-4xl tracking-tighter text-center w-fit">Hi.</h1>
-      <div className="my-4">
+      <div className="my-4 md:w-[90%] lg:w-[75%] xl:w-[50%]">
         <ResponsiveImage  
         srcDesktop={desktopImage}
         srcMobile={mobileImage} 
@@ -27,7 +27,7 @@ export default function Page() {
 
       <p className="prose prose-2xlg">
         I'm an artist, aspiring game designer, and graduate student at Kyushu University.
-        I also&nbsp;
+        I&nbsp;
         <a href="/games">develop games</a>,&nbsp;
         <a>shoot film</a>,&nbsp;
         {/*<a>write fiction</a>,*/}and&nbsp;

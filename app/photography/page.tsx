@@ -15,12 +15,12 @@ export default function Page() {
   return (
     <section>
         <h1 className="font-medium text-5xl tracking-tighter mb-8">Photography</h1>
-        <div className="grid grid-flow-row auto-rows-max gap-4">
+        <div className="flex flex-col flex-wrap justify-center gap-4 sm:mx-12 md:mx-16 lg:mx-80">
             <div className="flex flex-col items-center">
                 <Image
                     alt="Scott Am Gotterdammerung"
                     src={gotterdam}
-                    
+                    priority
                     className="rounded-md object-cover"
                 />
                 <div className="flex flex-col items-center">
@@ -32,7 +32,7 @@ export default function Page() {
                 <Image
                     alt="Wish Fulfillment"
                     src={wish}
-                    
+                    priority
                     className="rounded-md object-cover"
                 />
                 <div className="flex flex-col items-center">

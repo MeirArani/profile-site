@@ -14,38 +14,37 @@ export default function Page() {
             <h2 className="font-light text-3xl">Completed Projects</h2>
             <div>
                 <h3 className="font font-light text-5xl mt-3 mb-1"><i>Tenjin Dash</i></h3>
-                <a href='/games/tenjin' className="block">
-                <div className="relative mt-1 mb-2 w-screen h-52 bg-slate-300 ml-[-1.5rem]">
+                <div className="flex flex-col items-center">
+                    <a href='/games/tenjin' className="block relative w-screen">
+                <div className="relative mt-1 mb-2 h-52 bg-slate-300">
                     <Image 
                         src={tenjinBackground} 
                         alt="Tenjin Dash Background"
                         fill
                         className="w-full h-full object-cover blur-[2px]"
                     ></Image>
-
-                    
-                        <div className={`relative ${reggaeOne.className} absolute text-5xl text-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-clip-text text-transparent`}>
-                            <h2 className="block bg-gradient-to-br from-cyan-300  to-pink-300 z-10 from-50% bg-clip-text text-transparent">
-                                天神
-                                <br />
-                                <span>ダッシュ</span>
-                            </h2>
-                            <h2 className="absolute bg-gradient-to-br from-cyan-500  to-pink-600 from-50% bg-clip-text text-transparent -z-10 top-0 right-[-7px] w-[105%] h-[105%] content-center">
-                                天神
-                                <br />
-                                <span>ダッシュ</span>
-                            </h2>
-                            <h2 className="absolute top-[12px] left-[4px] w-full h-full -inset-1 bg-gradient-to-br from-cyan-500  to-pink-600 from-60% bg-clip-text text-transparent opacity-[.70] blur -z-20">
-                                天神
-                                <br />
-                                <span>ダッシュ</span>
-                            </h2>
-                        </div>                                     
+                    <div className={`relative ${reggaeOne.className} absolute text-5xl text-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-clip-text text-transparent`}>
+                        <h2 className="block bg-gradient-to-br from-cyan-300  to-pink-300 z-10 from-50% bg-clip-text text-transparent">
+                            天神
+                            <br />
+                            <span>ダッシュ</span>
+                        </h2>
+                        <h2 className="absolute origin-center left-1 top-1 bg-gradient-to-br from-cyan-500  to-pink-600 from-50% bg-clip-text text-transparent -z-10 right-[-7px] content-center">
+                            天神
+                            <br />
+                            <span>ダッシュ</span>
+                        </h2>
+                        <h2 className="absolute top-[12px] left-[4px] w-full h-full -inset-1 bg-gradient-to-br from-cyan-500  to-pink-600 from-60% bg-clip-text text-transparent opacity-[.70] blur -z-20">
+                            天神
+                            <br />
+                            <span>ダッシュ</span>
+                        </h2>
+                    </div>                                     
                 </div>
-                </a>
-
+                </a> 
+                <h4 className="prose prose-gray text-center mb-4">You are the controller in this high-octane race through the streets of Tenjin! Inspired by exercise-oriented game design of <i>World Class Track Meet</i> and<i>Wii Fit</i>.</h4>
+                </div>
                 
-                <h4 className="prose prose-gray">You are the controller in this high-octane race through the streets of Tenjin! Inspired by exercise-oriented game design of <i>World Class Track Meet</i> and<i>Wii Fit</i>.</h4>
             </div>
         </div>
         <div>

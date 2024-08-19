@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image";
-import oceanSuite from '../../public/music/ocean_suite/folder.png'
+import oceanSuite from '../../public/music/ocean_suite/folder.webp'
 import waiting from '../../public/music/waiting/waiting.webp'
 import contrition from '../../public/music/contrition/cover.webp'
 
@@ -59,45 +59,47 @@ export default function Page() {
         <h1 className="font-medium text-5xl tracking-tighter mb-1">Music</h1>
         <div>
           <h2 className="font text-4xl mb-6">Albums</h2>
-          <div className="flex flex-col items-center">
-            <h3 className="font font-light text-4xl"><i>Ocean Suite</i></h3>
-            <h4 className="">Electronic/Ambient</h4>
-            <h5 className="mb-2 text-sm">2020</h5>
-            <Image 
-            src={oceanSuite} 
-            alt="Ocean Suite album art"
-            className="w-3/4 mb-1"
-            ></Image>
-            <h5 className="text-lg"><i>Crimson Blue</i></h5>
-            <div><OceanPlayer></OceanPlayer></div>
-            
-          </div>
-          <div className="flex flex-col items-center mt-8">
-            <div className="flex flex-col items-center">
-              <h3 className="font font-light text-4xl "><i>The Waiting</i></h3>
-            <h4 className="">Rock/Experimental</h4>
-            <h5 className="mb-2 text-sm">2022</h5>
+          <div className="flex flex-wrap justify-center gap-x-12 gap-y-8">
+            <div className="flex flex-col items-center w-fit justify-self-center">
+              <h3 className="font font-light text-4xl"><i>Ocean Suite</i></h3>
+              <h4 className="">Electronic/Ambient</h4>
+              <h5 className="mb-2 text-sm">2020</h5>
+              <Image 
+              src={oceanSuite} 
+              alt="Ocean Suite album art"
+              className="w-80 mb-1"
+              ></Image>
+              <h5 className="text-lg"><i>Crimson Blue</i></h5>
+              <div><OceanPlayer></OceanPlayer></div>
+              
             </div>
-            
-            <Image 
-            src={waiting} 
-            alt="Thw Waiting album art"
-            className="w-3/4 mb-1"
-            ></Image>
-            <h5 className="text-lg"><i>The Way Back</i></h5>
-            <div><WaitingPlayer></WaitingPlayer></div>
-          </div>
-          <div className="flex flex-col items-center mt-8">
-            <h3 className="font font-light text-4xl"><i>Ritual Contrition</i></h3>
-            <h4 className="">Folk/Experimental</h4>
-            <h5 className="mb-2 text-sm">2024</h5>
-            <Image 
-            src={contrition} 
-            alt="Ritual Contrition album art"
-            className="w-3/4 mb-1"
-            ></Image>
-            <h5 className="text-lg"><i>Silence</i></h5>
-            <div><RitualPlayer></RitualPlayer></div>
+            <div className="flex flex-col items-center w-fit justify-self-center">
+              <div className="flex flex-col items-center">
+                <h3 className="font font-light text-4xl "><i>The Waiting</i></h3>
+              <h4 className="">Rock/Experimental</h4>
+              <h5 className="mb-2 text-sm">2022</h5>
+              </div>
+              
+              <Image 
+              src={waiting} 
+              alt="Thw Waiting album art"
+              className="w-80 mb-1"
+              ></Image>
+              <h5 className="text-lg"><i>The Way Back</i></h5>
+              <div><WaitingPlayer></WaitingPlayer></div>
+            </div>
+            <div className="flex flex-col items-center w-fit justify-self-center">
+              <h3 className="font font-light text-4xl"><i>Ritual Contrition</i></h3>
+              <h4 className="">Folk/Experimental</h4>
+              <h5 className="mb-2 text-sm">2024</h5>
+              <Image 
+              src={contrition} 
+              alt="Ritual Contrition album art"
+              className="w-80 mb-1"
+              ></Image>
+              <h5 className="text-lg"><i>Silence</i></h5>
+              <div><RitualPlayer></RitualPlayer></div>
+            </div>
           </div>
         </div>
         <div>
