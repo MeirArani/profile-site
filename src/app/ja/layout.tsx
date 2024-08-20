@@ -58,12 +58,10 @@ export default async function LocaleLayout({
   // Providing all messages to the client
   // side is the easiest way to get started
   const messages = await getMessages();
-  console.log({locale});
 
   return (
     <html
       lang={locale}
-      dir={locale}
       className={cx(
         'text-black bg-gradient-to-r from-pink-300 via-violet-300 to-blue-300 dark:text-white dark:bg-[#111010]',
         GeistSans.variable,
@@ -81,8 +79,8 @@ export default async function LocaleLayout({
       </head>
       <body className="antialiased max-w-full min-h-screen mb-8 flex flex-col md:flex-row mx-4 mt-2 sm:mx-8 md:mx-10 lg:mx-18">
         <NextIntlClientProvider messages={messages}>
-            <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
-            <Navbar />
+          <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
+            <Navbar locale="ja"/>
             {children}
             <Analytics />
             <SpeedInsights />

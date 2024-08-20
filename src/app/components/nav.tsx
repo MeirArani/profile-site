@@ -1,6 +1,6 @@
-import Link from 'next/link';
+import {Link} from '../../navigation';
 
-const navItems = {
+const navItemsEN = {
   '/': {
     name: 'home',
   },
@@ -18,7 +18,27 @@ const navItems = {
   },
 };
 
-export function Navbar() {
+const navItemsJA = {
+  '/': {
+    name: 'ホーム',
+  },
+  '/work': {
+    name: '生活',
+  },
+  '/games': {
+    name: 'ゲーム',
+  },
+  '/photography': {
+    name: '撮影',
+  },
+  '/music': {
+    name: '音楽',
+  },
+}
+
+export function Navbar({locale}) {
+  console.log(locale);
+  const navItems = locale === "ja" ? navItemsJA : navItemsEN;
   return (
     <aside className="-ml-[8px] mb-5 tracking-tight">
       <div className="lg:sticky lg:top-20">

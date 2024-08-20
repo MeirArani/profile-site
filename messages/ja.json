@@ -1,6 +1,7 @@
 {
     "HomePage": {
-      "greeting": "やあ、",
-      "followUp": "ミアーです。    よろしく。"
+        "greeting": "やあ、",
+        "followUp": "ミアーです。",
+        "followUp2": "よろしく。"
     }
 }

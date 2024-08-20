@@ -25,7 +25,7 @@ export default function Page() {
         classnamemobile="w-full"
         ></ResponsiveImage>
       </div>
-      <h1 className="font-medium text-3xl mb-4 tracking-tighter text-center w-fit">{t('followUp')}</h1>
+      <h1 className="font-medium text-3xl mb-4 tracking-tighter text-center w-fit">{t('followUp')}&nbsp;&nbsp;&nbsp;{t('followUp2')}</h1>
 
       <p className="prose prose-2xlg">
         I'm an artist, aspiring game designer, and graduate student at Kyushu University.

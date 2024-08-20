@@ -1,19 +1,18 @@
 import Image from "next/image";
 
-import {reggaeOne} from '../../utils/fonts'
-import tenjinBackground from '../../../public/games/tenjin/tenjin_background.webp'
-import exhibitFallback from '../../../public/games/tenjin/exhibit_fallback.webp'
-import panelFallback from '../../../public/games/tenjin/panel_fallback.webp'
-import buggyFallback from '../../../public/games/tenjin/buggy_fallback.webp'
-import dinoFallback from '../../../public/games/tenjin/dino_fallback.webp'
-import raceFallback from '../../../public/games/tenjin/race_fallback.webp'
-import mainFallback from '../../../public/games/tenjin/main_fallback.webp'
-import { FallbackVideo } from "app/components/full-video";
+import {reggaeOne} from '../../../utils/fonts'
+import tenjinBackground from '../../../../public/games/tenjin/tenjin_background.webp'
+import exhibitFallback from '../../../../public/games/tenjin/exhibit_fallback.webp'
+import panelFallback from '../../../../public/games/tenjin/panel_fallback.webp'
+import buggyFallback from '../../../../public/games/tenjin/buggy_fallback.webp'
+import dinoFallback from '../../../../public/games/tenjin/dino_fallback.webp'
+import raceFallback from '../../../../public/games/tenjin/race_fallback.webp'
+import mainFallback from '../../../../public/games/tenjin/main_fallback.webp'
+import { FallbackVideo } from "../../../components/full-video";
 
 export default function Page() {
-  console.log(tenjinBackground.src)
   return (
-    <section>
+    <section className="lg:mx-72 md:mx-16">
         <h1 className={`${reggaeOne.className} text-5xl mb-6`}>天神ダッシュ</h1>
         <FallbackVideo location="/games/tenjin/tenjindash.webm" fallback={mainFallback}></FallbackVideo>
         <div>

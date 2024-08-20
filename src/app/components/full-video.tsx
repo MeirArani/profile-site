@@ -3,14 +3,14 @@ import Image from "next/image"
 export function FallbackVideo(props) { 
   return (
 
-    <div className="relative flex flex-col items-center -ml-6 md:-ml-4 w-screen my-4" dangerouslySetInnerHTML={{ __html: `
+    <div className="relative flex flex-col items-center -ml-6 md:-ml-4 w-screen md:w-full my-4" dangerouslySetInnerHTML={{ __html: `
       <video
         loop
         muted
         autoplay
         playsinline
         src="${props.location}"
-        class="w-full ${props.className}"
+        class="w-full ${props.className} md:rounded-xl"
         poster="${props.fallback.src}"
       >
         <Image
