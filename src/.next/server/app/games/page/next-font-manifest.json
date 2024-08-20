@@ -1,0 +1,15 @@
+{
+  "pages": {},
+  "app": {
+    "[project]/app/games/page": [
+      "static/media/Geist_Variable-s.p.be1feab1.woff2",
+      "static/media/GeistMono_Variable.p.cea06542.woff2",
+      "static/media/If2RXTr6YS_zF4S_kcSWSVi_szLgiuEHiC4W-s.p.28d3aa8d.woff2",
+      "static/media/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw-s.p.7b3669ea.woff2",
+      "static/media/L0x5DF4xlVMF_BfR8bXMIjhLq3_cXbKD-s.p.37830d95.woff2",
+      "static/media/7r3DqX5msMIkeuwJwOJtzalB58P9ito-s.p.e9037e58.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pagesUsingSizeAdjust": false
+}

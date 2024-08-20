@@ -1,9 +1,5 @@
-import postgres from 'postgres';
 import { setupDevPlatform } from '@cloudflare/next-on-pages/next-dev';
-
-export const sql = postgres(process.env.POSTGRES_URL, {
-  ssl: 'allow',
-});
+import createNextIntlPlugin from 'next-intl/plugin';
 
 const nextConfig = {
   logging: {
@@ -66,6 +62,8 @@ const nextConfig = {
   },
 };
 
+
+
 const ContentSecurityPolicy = `
     default-src 'self' data: vercel.live;
     script-src 'self' 'unsafe-eval' 'unsafe-inline' cdn.vercel-insights.com vercel.live va.vercel-scripts.com;
@@ -113,4 +111,8 @@ if (process.env.npm_lifecycle_event === 'pages:build') {
   await setupDevPlatform();
 }
 
-export default nextConfig;
+const withNextIntl = createNextIntlPlugin();
+
+export default withNextIntl(nextConfig);
+
+//export default nextConfig;

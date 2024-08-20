@@ -3,12 +3,17 @@ import typography from '@tailwindcss/typography';
 const plugin = require('tailwindcss/plugin')
 
 export default {
-  content: ['./app/**/*.{ts,tsx}', './content/**/*.mdx', './public/**/*.svg'],
+  content: ['./src/app/**/*.{ts,tsx}', './content/**/*.mdx', './public/**/*.svg'],
   theme: {
+    fontFamily: {
+    },
     extend: {
       fontFamily: {
         sans: ['var(--font-geist-sans)'],
         mono: ['var(--font-geist-mono)'],
+        'sans-ja': ["IBM Plex Sans JP, sans-serif"],
+        'mono-ja': ["M PLUS 1 Code, monospace"],
+        
       },
       screens: {
         '3xl': '1920px',

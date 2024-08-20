@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/app/error.tsx"],"sourcesContent":["'use client';\r\n\r\nimport { useEffect } from 'react';\r\n\r\nexport default function Error({\r\n  error,\r\n  reset,\r\n}: {\r\n  error: Error;\r\n  reset: () => void;\r\n}) {\r\n  useEffect(() => {\r\n    // Log the error to an error reporting service\r\n    console.error(error);\r\n  }, [error]);\r\n\r\n  return (\r\n    <div>\r\n      <p>Oh no, something went wrong... maybe refresh?</p>\r\n    </div>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;;;AAAA;;;AAIe,SAAS,MAAM,EAC5B,KAAK,EACL,KAAK,EAIN;IACC,CAAA,GAAA,+MAAA,CAAA,YAAS,AAAD,EAAE;QACR,8CAA8C;QAC9C,QAAQ,KAAK,CAAC;IAChB,GAAG;QAAC;KAAM;IAEV,qBACE,wPAAC;kBACC,cAAA,wPAAC;sBAAE;;;;;;;;;;;AAGT"}},
+    {"offset": {"line": 35, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 43, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/node_modules/next/src/server/future/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.ts"],"sourcesContent":["unable to read source [project]/node_modules/next/src/server/future/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.ts"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":";AAAAA,OAAOC,OAAO,GAAGC,yIAAiCC,QAAQ,CACxD,YACD,CAACC,kBAAkB"}},
+    {"offset": {"line": 45, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
