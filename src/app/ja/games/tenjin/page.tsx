@@ -14,7 +14,7 @@ export const runtime = 'edge';
 export default function Page({params: locale}) {
   return (
     <section className="lg:mx-72 md:mx-16">
-        <h1 className={`${reggaeOne.className} text-5xl mb-6`}>天神ダッシュ</h1>
+        <h1 className={`font-reggae text-5xl mb-6`}>天神ダッシュ</h1>
         <FallbackVideo location="/games/tenjin/tenjindash.webm" fallback={mainFallback}></FallbackVideo>
         <div>
           <div>

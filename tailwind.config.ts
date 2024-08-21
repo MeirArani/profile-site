@@ -13,6 +13,7 @@ export default {
         mono: ['var(--font-geist-mono)'],
         'sans-ja': ["IBM Plex Sans JP, sans-serif"],
         'mono-ja': ["M PLUS 1 Code, monospace"],
+        'reggae': ["Reggae One"],
         
       },
       screens: {

@@ -49,11 +49,11 @@ const nextConfig = {
 const ContentSecurityPolicy = `
     default-src 'self' data: vercel.live;
     script-src 'self' 'unsafe-eval' 'unsafe-inline' cdn.vercel-insights.com vercel.live va.vercel-scripts.com;
-    style-src 'self' 'unsafe-inline';
+    style-src 'self' 'unsafe-inline' fonts.googleapis.com;
     img-src * blob: data:;
     media-src 'self' blob: data:;
     connect-src *;
-    font-src 'self' data:;
+    font-src 'self' data: fonts.gstatic.com;
     frame-src 'self' *.codesandbox.io vercel.live;
 `;
 

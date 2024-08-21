@@ -7,7 +7,7 @@ import {reggaeOne} from '../../utils/fonts'
 import {unstable_setRequestLocale} from 'next-intl/server';
 
 export default function Page({params: locale}) {
-    unstable_setRequestLocale(locale);
+    //unstable_setRequestLocale(locale);
   return (
     <section>
         <h1 className="text-5xl">Games</h1>
@@ -24,7 +24,7 @@ export default function Page({params: locale}) {
                         fill
                         className="w-full h-full object-cover blur-[2px]"
                     ></Image>
-                    <div className={`relative ${reggaeOne.className} absolute text-5xl text-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-clip-text text-transparent`}>
+                    <div className={`font-reggae absolute text-5xl text-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-clip-text text-transparent`}>
                         <h2 className="block bg-gradient-to-br from-cyan-300  to-pink-300 z-10 from-50% bg-clip-text text-transparent">
                             天神
                             <br />
