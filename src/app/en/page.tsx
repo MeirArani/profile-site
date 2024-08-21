@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import desktopImage from '../../public/photos/multiples1.webp'
 import mobileImage from '../../public/hanami.webp'
@@ -7,7 +8,6 @@ import {unstable_setRequestLocale} from 'next-intl/server';
 import {getTranslations} from 'next-intl/server';
 
 export default function Page({params: locale}) {
-  unstable_setRequestLocale(locale);
   const t = useTranslations('HomePage');
   return (
     <section className="flex flex-col items-center">
@@ -67,13 +67,4 @@ function ArrowIcon() {
       />
     </svg>
   );
-}
-
- 
-export async function generateMetadata({params: {locale}}) {
-  const t = await getTranslations({locale, namespace: 'Metadata'});
- 
-  return {
-    title: t('title')
-  };
 }

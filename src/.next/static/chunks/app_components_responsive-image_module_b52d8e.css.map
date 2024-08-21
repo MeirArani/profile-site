@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["[project]/app/components/responsive-image.module.css"],"sourcesContent":[".imgDesktop {\r\n    display: none;\r\n  }\r\n   \r\n@media only screen and (min-width: 768px) {\r\n    .imgMobile {\r\n      display: none;\r\n    }\r\n    .imgDesktop {\r\n      display: unset;\r\n    }\r\n  }"],"names":[],"mappings":"AAAA;;;;AAIA;EACI;;;;EAGA"}},
-    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}

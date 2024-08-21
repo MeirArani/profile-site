@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import profileImg from '../../../public/me_work.webp'
 import tenjinBackground from '../../../public/games/tenjin/tenjin_background.webp'
@@ -7,7 +8,6 @@ import {reggaeOne} from '../../utils/fonts'
 import {unstable_setRequestLocale} from 'next-intl/server';
 
 export default function Page({params: locale}) {
-    unstable_setRequestLocale(locale);
   return (
     <section>
         <h1 className="text-5xl">Games</h1>

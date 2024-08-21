@@ -10,10 +10,12 @@ export const inter = Inter({
 export const roboto_mono = Roboto_Mono({
   subsets: ['latin'],
   display: 'swap',
+  adjustFontFallback: false
 })
 
 export const reggaeOne = Reggae_One({
     subsets: ['latin'],
     weight: ['400'],
     display: 'swap',
+    adjustFontFallback: false
 })

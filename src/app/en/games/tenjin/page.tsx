@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 
 import {reggaeOne} from '../../../utils/fonts'
@@ -13,7 +14,6 @@ import {unstable_setRequestLocale} from 'next-intl/server';
 export const dynamic = 'force-dynamic'
 export const runtime = 'edge';
 export default function Page({params: locale}) {
-  unstable_setRequestLocale(locale);
   return (
     <section className="lg:mx-72 md:mx-16">
         <h1 className={`${reggaeOne.className} text-5xl mb-6`}>天神ダッシュ</h1>
