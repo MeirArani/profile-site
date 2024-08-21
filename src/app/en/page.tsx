@@ -7,6 +7,9 @@ import {useTranslations} from 'next-intl';
 import {unstable_setRequestLocale} from 'next-intl/server';
 import {getTranslations} from 'next-intl/server';
 
+export const dynamic = 'force-dynamic'
+export const runtime = 'edge';
+
 export default function Page({params: locale}) {
   const t = useTranslations('HomePage');
   return (

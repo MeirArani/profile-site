@@ -2,6 +2,10 @@
 import Image from "next/image";
 import profileImg from '../../../public/failgirl.webp'
 import {unstable_setRequestLocale} from 'next-intl/server';
+
+export const dynamic = 'force-dynamic'
+export const runtime = 'edge';
+
 export default function Page({params: locale}) {
   return (
     

@@ -12,6 +12,10 @@ import parco from '../../../public/photos/parco.webp'
 import wish from '../../../public/photos/wish.webp'
 import inu from '../../../public/photos/inu.webp'
 import {unstable_setRequestLocale} from 'next-intl/server';
+
+export const dynamic = 'force-dynamic'
+export const runtime = 'edge';
+
 export default function Page({params: locale}) {
   return (
     <section>

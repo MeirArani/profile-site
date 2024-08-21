@@ -5,6 +5,10 @@ import mobileImage from '../../public/hanami.webp'
 import {ResponsiveImage} from '../components/responsive-image'
 import {useTranslations} from 'next-intl';
 import {unstable_setRequestLocale} from 'next-intl/server';
+
+export const dynamic = 'force-dynamic'
+export const runtime = 'edge';
+
 export default function Page({params: locale}) {
   const t = useTranslations('HomePage');
   return (

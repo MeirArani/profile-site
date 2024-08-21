@@ -6,6 +6,9 @@ import {Link} from "../../../navigation"
 import {reggaeOne} from '../../utils/fonts'
 import {unstable_setRequestLocale} from 'next-intl/server';
 
+export const dynamic = 'force-dynamic'
+export const runtime = 'edge';
+
 export default function Page({params: locale}) {
     //unstable_setRequestLocale(locale);
   return (
