@@ -10,7 +10,7 @@ import raceFallback from '../../../../public/games/tenjin/race_fallback.webp'
 import mainFallback from '../../../../public/games/tenjin/main_fallback.webp'
 import { FallbackVideo } from "../../../components/full-video";
 export const dynamic = 'force-dynamic'
-
+export const runtime = 'edge';
 export default function Page({params: locale}) {
   return (
     <section className="lg:mx-72 md:mx-16">

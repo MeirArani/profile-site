@@ -11,7 +11,7 @@ import mainFallback from '../../../../public/games/tenjin/main_fallback.webp'
 import { FallbackVideo } from "../../../components/full-video";
 import {unstable_setRequestLocale} from 'next-intl/server';
 export const dynamic = 'force-dynamic'
-
+export const runtime = 'edge';
 export default function Page({params: locale}) {
   unstable_setRequestLocale(locale);
   return (
