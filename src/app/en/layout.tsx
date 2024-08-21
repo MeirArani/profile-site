@@ -3,8 +3,7 @@ import type { Metadata } from 'next';
 import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
 import { Navbar } from '../components/nav';
-import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from '@vercel/speed-insights/next';
+
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server'; 
 import { locales } from 'src/config';
@@ -86,8 +85,6 @@ export default async function LocaleLayout({
             <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
             <Navbar locale="en"/>
             {children}
-            <Analytics />
-            <SpeedInsights />
           </main>
         </NextIntlClientProvider>
       </body>
