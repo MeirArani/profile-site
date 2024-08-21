@@ -5,8 +5,6 @@ import { GeistMono } from 'geist/font/mono';
 import { Noto_Sans_JP } from 'next/font/google';
 import { Noto_Sans_Mono } from 'next/font/google';
 import { Navbar } from '../components/nav';
-import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from '@vercel/speed-insights/next';
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server'; 
 import {unstable_setRequestLocale} from 'next-intl/server';
@@ -89,8 +87,6 @@ export default async function LocaleLayout({
           <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
             <Navbar locale="ja"/>
             {children}
-            <Analytics />
-            <SpeedInsights />
           </main>
         </NextIntlClientProvider>
       </body>
