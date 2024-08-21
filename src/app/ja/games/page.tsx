@@ -4,9 +4,10 @@ import tenjinBackground from '../../../public/games/tenjin/tenjin_background.web
 import tenjinText from '../../../public/games/tenjin_text_placeholder.png'
 import {Link} from "../../../navigation"
 import {reggaeOne} from '../../utils/fonts'
+import {unstable_setRequestLocale} from 'next-intl/server';
 
-
-export default function Page() {
+export default function Page({params: locale}) {
+    unstable_setRequestLocale(locale);
   return (
     <section>
         <h1 className="text-5xl">Games</h1>

@@ -1,7 +1,18 @@
 import Image from "next/image";
 import profileImg from '../../../public/failgirl.webp'
+import {unstable_setRequestLocale} from 'next-intl/server';
+import {getTranslations} from 'next-intl/server';
+ 
+export async function generateMetadata({params: {locale}}) {
+  const t = await getTranslations({locale, namespace: 'Metadata'});
+ 
+  return {
+    title: t('title')
+  };
+}
 
-export default function Page() {
+export default function Page({params: locale}) {
+  unstable_setRequestLocale(locale);
   return (
     <section>
       <div className="flex flex-row justify-center w-full max-h-72">
@@ -164,3 +175,4 @@ export default function Page() {
     </section>
   );
 }
+

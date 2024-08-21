@@ -9,8 +9,9 @@ import dinoFallback from '../../../../public/games/tenjin/dino_fallback.webp'
 import raceFallback from '../../../../public/games/tenjin/race_fallback.webp'
 import mainFallback from '../../../../public/games/tenjin/main_fallback.webp'
 import { FallbackVideo } from "../../../components/full-video";
+export const dynamic = 'force-dynamic'
 
-export default function Page() {
+export default function Page({params: locale}) {
   return (
     <section className="lg:mx-72 md:mx-16">
         <h1 className={`${reggaeOne.className} text-5xl mb-6`}>天神ダッシュ</h1>

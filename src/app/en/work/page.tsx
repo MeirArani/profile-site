@@ -1,8 +1,10 @@
 import Image from "next/image";
 import profileImg from '../../../public/failgirl.webp'
-
-export default function Page() {
+import {unstable_setRequestLocale} from 'next-intl/server';
+export default function Page({params: locale}) {
+  unstable_setRequestLocale(locale);
   return (
+    
     <section>
       <div className="flex flex-row justify-center w-full max-h-72">
         <div className="flex flex-row justify-center content-center mb-8 items-center max-h-72">

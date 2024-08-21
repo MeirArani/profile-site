@@ -7,6 +7,12 @@ import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server'; 
+import { locales } from 'src/config';
+import {unstable_setRequestLocale} from 'next-intl/server';
+
+/*export function generateStaticParams() {
+  return locales.map((locale) => ({locale}));
+}*/
 
 export const metadata: Metadata = {
   metadataBase: new URL('http://localhost:3000'),
@@ -55,8 +61,8 @@ export default async function LocaleLayout({
 }) {
   // Providing all messages to the client
   // side is the easiest way to get started
+  //unstable_setRequestLocale(locale);
   const messages = await getMessages();
-
   return (
     <html
       lang={locale}

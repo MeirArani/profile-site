@@ -10,8 +10,9 @@ import overexpose from '../../../public/photos/overexpose.webp'
 import parco from '../../../public/photos/parco.webp'
 import wish from '../../../public/photos/wish.webp'
 import inu from '../../../public/photos/inu.webp'
-
-export default function Page() {
+import {unstable_setRequestLocale} from 'next-intl/server';
+export default function Page({params: locale}) {
+    unstable_setRequestLocale(locale);
   return (
     <section>
         <h1 className="font-medium text-5xl tracking-tighter mb-8">Photography</h1>

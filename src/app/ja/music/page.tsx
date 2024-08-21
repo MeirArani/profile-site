@@ -4,11 +4,16 @@ import oceanSuite from '../../../public/music/ocean_suite/folder.webp'
 import waiting from '../../../public/music/waiting/waiting.webp'
 import contrition from '../../../public/music/contrition/cover.webp'
 
-import dynamic from 'next/dynamic'
- 
-const AudioPlayer = dynamic(() => import('react-audio-player-component').then((mod) => mod.AudioPlayer), {
+ //import dynamic from 'next/dynamic'
+import {unstable_setRequestLocale} from 'next-intl/server'; 
+import {AudioPlayer} from 'react-audio-player-component' 
+
+export const dynamic = 'force-dynamic'
+export const runtime = 'edge'
+/*const AudioPlayer = dynamic(() => import('react-audio-player-component').then((mod) => mod.AudioPlayer), {
   ssr: false,
-})
+
+})*/
 
 const OceanPlayer = () => (
   <AudioPlayer 
@@ -37,7 +42,7 @@ const WaitingPlayer = () => (
       barPlayedColor="#f2e7ff"
     />
   );
-
+  
 const RitualPlayer = () => (
   <AudioPlayer 
       src="/music/contrition/Silence.mp3"
@@ -52,7 +57,7 @@ const RitualPlayer = () => (
     />
   );
 
-export default function Page() {
+export default function Page({params: locale}) {
   return (
     <section>
       <div className="flex flex-col">
