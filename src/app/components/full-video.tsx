@@ -1,24 +1,37 @@
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
+import { FallbackImage } from "./fallback-image"
+import { useInView } from "react-intersection-observer";
+import React, { useRef} from 'react';
 
 export function FallbackVideo(props) { 
-  return (
 
-    <div className="relative flex flex-col items-center -ml-6 md:-ml-4 w-screen md:w-full my-4" dangerouslySetInnerHTML={{ __html: `
+  const { ref, inView, entry } = useInView({
+    /* Optional options */
+    threshold: 0,
+    onChange: (inView, entry) => (inView ? entry.target.play() : entry.target.pause())
+  });
+
+    //inView ? ref.current.play() : vidRef.current.pause();
+
+  return (
+    
+    <div className="relative flex flex-col items-center -ml-6 md:-ml-4 w-screen md:w-full my-4">
       <video
-        loop
+        ref={ref}
+        loop={inView}
         muted
-        autoplay
-        playsinline
-        src="${props.location}"
-        class="w-full ${props.className} md:rounded-xl"
-        poster="${props.fallback.src}"
+        autoPlay={inView}
+        playsInline
+        src={props.location}
+        className="w-full md:rounded-xl"
+        poster={props.fallback.src}
       >
-        <Image
-          src="${props.fallback}"
-          alt="Fallback image for element. Check your browser's video support!"
-        ></Image>
+      <Image
+        src={props.fallback}
+        alt="Fallback image for element. Check your browser's video support!"
+      ></Image>
       </video>
-      <p class="mx-4 prose prose-gray text-sm text-center mt-1">${props.caption != null ? props.caption : ""}</p>
-    ` }}></div>
+      <p className="mx-4 prose prose-gray text-sm text-center mt-1">${props.caption != null ? props.caption : ""}</p>
+    </div>
   )
 }

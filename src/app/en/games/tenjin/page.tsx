@@ -16,8 +16,8 @@ export const runtime = 'edge';
 export default function Page({params: locale}) {
   return (
     <section className="lg:mx-72 md:mx-16">
-        <h1 className={`font-reggae text-5xl mb-6`}>天神ダッシュ</h1>
-        <FallbackVideo location="/games/tenjin/tenjindash.webm" fallback={mainFallback}></FallbackVideo>
+        <h1 className={`font-tenjin text-5xl mb-6`}>天神ダッシュ</h1>
+        <FallbackVideo location="/tenjindash.webm" fallback={mainFallback}></FallbackVideo>
         <div>
           <div>
               <ul className="text-sm">
@@ -31,7 +31,7 @@ export default function Page({params: locale}) {
             <h3 className="-mt-2">An arcade-style racing experience inspired by the physical control schemes from games like <i>World Class Track Meet</i>.</h3>
           </div>
           <FallbackVideo 
-              location="/games/tenjin/tenjin_race.webm" 
+              location="/tenjin_race.webm" 
               fallback={raceFallback}
               caption="The sweet taste of victory..."
             ></FallbackVideo>
@@ -47,7 +47,7 @@ export default function Page({params: locale}) {
               </p>
             </div>
             <FallbackVideo 
-              location="/games/tenjin/dino_buggy.webm" 
+              location="/dino_buggy.webm" 
               fallback={buggyFallback}
               caption="Early builds were...a little buggy."
             ></FallbackVideo>
@@ -64,7 +64,7 @@ export default function Page({params: locale}) {
                 </p>
               </div>  
               <FallbackVideo 
-              location="/games/tenjin/dino_run.webm" 
+              location="/dino_run.webm" 
               fallback={dinoFallback}
               caption="The kids love it!"
               ></FallbackVideo>
@@ -100,7 +100,7 @@ export default function Page({params: locale}) {
               </p>
             </div>
             <FallbackVideo 
-              location="/games/tenjin/panel.webm" 
+              location="/panel.webm" 
               fallback={panelFallback}
               caption="Seeing my own game presented was an incredibly surreal sight."
               ></FallbackVideo>
@@ -108,7 +108,7 @@ export default function Page({params: locale}) {
               <p>After a panel co-hosted by my advisor, we let the audience take the game for a spin themselves. I was out-of-my-mind with nervous energy...but overall, everyone loved it! Mission success!</p>
             </div>
             <FallbackVideo 
-              location="/games/tenjin/exhibit.webm" 
+              location="/exhibit.webm" 
               fallback={exhibitFallback}
               caption="The event's dress code might have made things a little awkward for players..."
               ></FallbackVideo>
