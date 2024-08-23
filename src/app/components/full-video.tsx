@@ -31,7 +31,7 @@ export function FallbackVideo(props) {
         alt="Fallback image for element. Check your browser's video support!"
       ></Image>
       </video>
-      <p className="mx-4 prose prose-gray text-sm text-center mt-1">${props.caption != null ? props.caption : ""}</p>
+      <p className="mx-4 prose prose-gray text-sm text-center mt-1">{props.caption != null ? props.caption : ""}</p>
     </div>
   )
 }

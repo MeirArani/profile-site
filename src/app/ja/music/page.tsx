@@ -1,8 +1,8 @@
 'use client'
 import Image from "next/image";
-import oceanSuite from '../../../public/music/ocean_suite/folder.webp'
-import waiting from '../../../public/music/waiting/waiting.webp'
-import contrition from '../../../public/music/contrition/cover.webp'
+import oceanSuite from '../../../../public/music/ocean_suite/folder.webp'
+import waiting from '../../../../public/music/waiting/waiting.webp'
+import contrition from '../../../../public/music/contrition/cover.webp'
 
  //import dynamic from 'next/dynamic'
 import {unstable_setRequestLocale} from 'next-intl/server'; 

@@ -1,6 +1,6 @@
 export function TenjinLogo(props) { 
     return(
-        <div className={`font-tenjin text-5xl text-center bg-clip-text text-transparent`}>
+        <div className={`relative font-tenjin text-5xl text-center bg-clip-text text-transparent`}>
             <h2 className="block bg-gradient-to-br from-cyan-300  to-pink-300 z-10 from-50% bg-clip-text text-transparent">
                 天神
                 <br />
