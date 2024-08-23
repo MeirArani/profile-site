@@ -8,7 +8,7 @@ export function FallbackVideo(props) {
   const { ref, inView, entry } = useInView({
     /* Optional options */
     threshold: 0,
-    onChange: (inView, entry) => (inView ? entry.target.play() : entry.target.pause())
+    onChange: (inView, entry) => (inView ? (entry.target as HTMLVideoElement).play() : (entry.target as HTMLVideoElement).pause())
   });
 
     //inView ? ref.current.play() : vidRef.current.pause();
