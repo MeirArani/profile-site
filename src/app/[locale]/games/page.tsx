@@ -16,14 +16,7 @@ export default function Page({params: locale}) {
         <h1 className="text-5xl">Games</h1>
         <div>
             <h2 className="font-light text-3xl">Completed Projects</h2>
-            <div>
-                <h3 className="font font-light text-5xl mt-3 mb-1"><i>Tenjin Dash</i></h3>
-                <div className="flex flex-col items-center">
-                    <FullBanner href="/games/tenjin" backgroundImg={tenjinBackground} logo={<TenjinLogo/>}></FullBanner>
-                    <h4 className="prose prose-gray text-center mb-4">You are the controller in this high-octane race through the streets of Tenjin! Inspired by exercise-oriented game design of <i>World Class Track Meet</i> and<i>Wii Fit</i>.</h4>
-                </div>
-                
-            </div>
+            <FullBanner href="/games/tenjin" backgroundImg={tenjinBackground} logo={<TenjinLogo/>} title="Tenjin"></FullBanner>
         </div>
         <div>
             <h2 className="font text-4xl">Prototypes</h2>

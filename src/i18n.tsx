@@ -13,6 +13,10 @@ export default getRequestConfig(async ({locale}) => {
     }
  
   return {
+    defaultTranslationValues: {
+      i: (chunks) => <i>{chunks}</i>,
+      value: 123
+    },
     messages: (await import(`../messages/${locale}.json`)).default
   };
 });

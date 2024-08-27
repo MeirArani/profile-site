@@ -13,13 +13,14 @@
     },
     "Games": {
       "Tenjin": {
-
+        "title": "Tenjin Dash",
+        "desc": "You are the controller in this high-octane race through the streets of Tenjin! Inspired by exercise-oriented game design of <i>World Class Track Meet</i> and<i>Wii Fit</i>."
       },
       "EnemyZero": {
-
+        "title": "Enemy Zero"
       },
       "Beauty": {
-        
+        "title": "Beauty"
       }
     }
 }
