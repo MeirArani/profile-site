@@ -15,7 +15,7 @@ export const dynamic = 'force-dynamic'
 export const runtime = 'edge';
 export default function Page({params: locale}) {
   return (
-    <section className="lg:mx-72 md:mx-16">
+    <section className="lg:mx-24 md:mx-16 xl:mx-48 2xl:mx-72">
         <h1 className={`font-tenjin text-5xl mb-6`}>Tenjin Dash</h1>
         <FallbackVideo location="/tenjindash.webm" fallback={mainFallback}></FallbackVideo>
         <div>
