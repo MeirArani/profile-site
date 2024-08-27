@@ -14,8 +14,9 @@ export default {
         'sans-ja': ["IBM Plex Sans JP, sans-serif"],
         'mono-ja': ["M PLUS 1 Code, monospace"],
         'tenjin': ["Reggae One"],
-        'enemyzero': [" Cutive Mono , monospace"]
-        
+        'enemyzero': ["Smooch Sans, sans-serif"],
+        'baskervvile': ["Baskervville, serif"],
+          
       },
       screens: {
         '3xl': '1920px',
