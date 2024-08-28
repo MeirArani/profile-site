@@ -1,8 +1,8 @@
-import '../global.css';
+import '../../global.css';
 import type { Metadata } from 'next';
 import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
-import { Navbar } from '../components/nav';
+import { Navbar } from '@/components/nav';
 
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server'; 
@@ -69,7 +69,7 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       className={cx(
-        'text-black bg-gradient-to-r from-pink-300 via-violet-300 to-blue-300 dark:text-white dark:bg-[#111010]',
+        'text-white bg-black',
         GeistSans.variable,
         GeistMono.variable
       )}

@@ -1,7 +1,7 @@
 'use client'
 import desktopImage from '@/public/photos/multiples1.webp'
 import mobileImage from '@/public/hanami.webp'
-import {ResponsiveImage} from '../components/responsive-image'
+import {ResponsiveImage} from '@/components/responsive-image'
 import {useTranslations} from 'next-intl';
 import { ArrowIcon } from "@/components/arrow-icon";
 export const dynamic = 'force-dynamic'

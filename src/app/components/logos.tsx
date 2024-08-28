@@ -32,9 +32,9 @@ export function EnemyZeroLogo(props) {
 
 export function BeautyLogo(props) {
     return (
-        <div className="relative font-beauty text-6xl md:text-7xl text-center">
+        <div className="relative w-fit font-beauty text-6xl md:text-7xl text-center">
             <h1 className="block whitespace-nowrap text-[#fa6b91] z-50">Beauty</h1>
-            <h1 className="block whitespace-nowrap absolute top-1 -left-0.5 text-[#211166] -z-10">Beauty</h1>
+            <h1 className="block origin-center whitespace-nowrap absolute top-1 -left-0.5 text-[#211166] -z-10">Beauty</h1>
         </div>
     )
 }

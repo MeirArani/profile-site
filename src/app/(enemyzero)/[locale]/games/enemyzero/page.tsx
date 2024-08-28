@@ -1,14 +1,14 @@
 'use client'
 import Image from "next/image";
 
-import exhibitFallback from '@/public/games/tenjin/exhibit_fallback.webp'
-import panelFallback from '@/public/games/tenjin/panel_fallback.webp'
-import buggyFallback from '@/public/games/tenjin/buggy_fallback.webp'
-import dinoFallback from '@/public/games/tenjin/dino_fallback.webp'
-import raceFallback from '@/public/games/tenjin/race_fallback.webp'
-import mainFallback from '@/public/games/tenjin/main_fallback.webp'
+import earlyFallback from '@/public/games/ez/early_fallback.webp'
+import glitchedFallback from '@/public/games/ez/glitched_fallback.webp'
+import gunFallback from '@/public/games/ez/gun_fallback.webp'
+import outdoorsFallback from '@/public/games/ez/outdoors_fallback.webp'
+import puzzleFallback from '@/public/games/ez/puzzle_fallback.webp'
+import walkingFallback from '@/public/games/ez/walking_fallback.webp'
 
-import { FallbackVideo } from "@/components/full-video";
+import { FullAV } from "@/components/full-av";
 import {unstable_setRequestLocale} from 'next-intl/server';
 import { EnemyZeroLogo } from "@/components/logos";
 export const dynamic = 'force-dynamic'
@@ -16,10 +16,11 @@ export const runtime = 'edge';
 export default function Page({params: locale}) {
   return (
     <section className="lg:mx-72 md:mx-16">
-      <div className="sticky bg-black w-screen h-screen top-0 left-0"></div>
         <EnemyZeroLogo></EnemyZeroLogo>
-        <FallbackVideo location="/tenjindash.webm" fallback={mainFallback}></FallbackVideo>
         <div>
+          <FullAV
+          fallback={walkingFallback}
+          ></FullAV>
           <div>
               <ul className="text-sm">
                 <li><b>Game Engine:</b> Unreal</li>
@@ -28,19 +29,20 @@ export default function Page({params: locale}) {
                 <li><b>Created:</b> Oct. 2023</li>
               </ul>
           </div>
-          <div className="text-2xl text-white font-baskervvile">
-            <h3>Laura is awake. &nbsp;   She shouldn't be.</h3>
-            <h3>Something else is on-board the ship. &nbsp; <i className=" text-red-700">It shouldn't be.</i></h3>
+          <div className=" mt-4 md:text-2xl text-white font-baskervvile">
+            <h3>Laura is awake. <br/>She shouldn't be.</h3>
+            <h3><br/>Something else is on-board. <br/><i className=" text-red-700">It shouldn't be.</i></h3>
           </div>
-          <FallbackVideo 
-              location="/tenjin_race.webm" 
-              fallback={raceFallback}
+          <FullAV location="/games/ez/ez_walking.webm" fallback={walkingFallback} dark></FullAV>
+          <FullAV 
+              location="/games/ez/ez_early.webm" 
+              fallback={earlyFallback}
+              dark
               caption="The sweet taste of victory..."
-            ></FallbackVideo>
+            ></FullAV>
           <div className="mb-1">
-            <h2 className="text-5xl mb-4">Background</h2>
-            <h3 className="text-3xl">Prototype&mdash;<i>DynoDash!</i></h3>
-            <div className="prose prose-gray">
+            <h2 className="text-5xl mb-4">Concept</h2>
+            <div className="prose prose-invert">
               <p>
                 <i>Tenjin Dash</i> came about in June 2022 at the request of my research supervisor, <a href="https://hyoka.ofc.kyushu-u.ac.jp/search/details/K002398/english.html">Hiroyuki Matsuguma</a>. The project would quickly transform from 'simple prototype' to my first true game development challenge.
               </p> 
@@ -48,13 +50,14 @@ export default function Page({params: locale}) {
                 Tasked with designing a simple <a href="https://en.wikipedia.org/wiki/Serious_game">serious game</a> aimed at children, I considered concepts centered on exercise and education before arriving at a rough design that combined the two.
               </p>
             </div>
-            <FallbackVideo 
-              location="/dino_buggy.webm" 
-              fallback={buggyFallback}
+            <FullAV 
+              location="/games/ez/ez_gun.webm" 
+              fallback={gunFallback}
+              dark
               caption="Early builds were...a little buggy."
-            ></FallbackVideo>
+            ></FullAV>
             <div>
-              <div className="prose prose-gray mb-4">
+              <div className="prose prose-invert mb-4">
                 <p>
                   Originally themed around dinosaurs (who doesn't love a cute dino?), this prototype saw competing racers dual-wielding JoyCons: one strapped to their leg, with another held in hand. Players ran in-place to control the (on-rails) speed of their character&mdash;challenging their athletic ability&mdash;while using their handheld JoyCon to answer boost-granting quiz questions&mdash;rewarding academic expertise.
                 </p>   
@@ -65,12 +68,13 @@ export default function Page({params: locale}) {
                   After a few months of non-stop struggles against Unity, and following many sleepless nights spent red-eyed&mdash;bringing myself up to speed with C#'s many idiosyncrasi&mdash;<b><i>cough</i></b>&mdash;I mean er....<i>'novel paradigms'</i>&mdash;I finally put together a decent 'alpha' build, which we showcased at local events in summer/fall 2022.
                 </p>
               </div>  
-              <FallbackVideo 
-              location="/dino_run.webm" 
-              fallback={dinoFallback}
+              <FullAV 
+              location="/games/ez/ez_outdoors.webm" 
+              fallback={outdoorsFallback}
               caption="The kids love it!"
-              ></FallbackVideo>
-              <div className="prose prose-gray mb-4">
+              dark
+              ></FullAV>
+              <div className="prose prose-invert mb-4">
                 <p>
                 Since this was my first attempt at real game development...lets just say that the road was <b><i>veeeeery</i></b> bumpy. Although I had a CS degree and a lifetime of computer/game obsession under my belt...settling into the strategies and paradigms of game engines like Unity or Unreal is a far cry from the world I knew. Looking back on my early code now, let's just say it's probably for the best we leave those branches unpublished...
                 </p>
@@ -78,8 +82,8 @@ export default function Page({params: locale}) {
             </div>
           </div>
           <div className="mb-4">
-            <h3 className="text-3xl">Evolution</h3>
-              <div className="prose prose-gray">
+            <h3 className="text-3xl">Background</h3>
+              <div className="prose prose-invert">
                 <p>Thankfully, I would receive a good reason to refine the game just a few days after completion. My advisor had been working with <a href="https://www.nikken.co.jp/">Nikken Sekkei</a>&mdash;the second largest architectural practice on earth&mdash;<a href="https://built.itmedia.co.jp/bt/articles/2301/30/news178_2.html">on a project</a> to promote future technologies related to architecture, city planning, and urban design in Fukuoka's downtown district, Tenjin. Naturally, games, gamification, and serious games were some of the future technologies on the docket&mdash;leading me to join the project.
                 </p>
                 <p>
@@ -89,8 +93,8 @@ export default function Page({params: locale}) {
               </div>
           </div>
           <div className="mb-4">
-            <h3 className="text-3xl">The Big Time</h3>
-            <div className="prose prose-gray">
+            <h3 className="text-3xl">In Tune and On Time</h3>
+            <div className="prose prose-invert">
               <p>
                 3D models of Tenjin were supplied by Nikken Sekkei, while I was left to design, develop, and present the game myself. Music was supplied by the great <a href="https://www.instagram.com/shilohbeeler/">Shiloh Beeler.</a>
               </p>
@@ -101,20 +105,22 @@ export default function Page({params: locale}) {
                 And at last...it was time for the most feared concept in any game developer's mind: <b><i>demo time.</i></b> I, my advisor, and a few underclassmen-turned-assistants found ourselves at the <a href="https://resolatenjin.jp/hall/"><i>Resola Hall</i></a>, surrounded by a legion of salarymen clad in businesswear. 
               </p>
             </div>
-            <FallbackVideo 
-              location="/panel.webm" 
-              fallback={panelFallback}
+            <FullAV 
+              location="/games/ez/ez_puzzle.webm" 
+              fallback={puzzleFallback}
               caption="Seeing my own game presented was an incredibly surreal sight."
-              ></FallbackVideo>
-            <div className="prose prose-gray">
+              dark
+              ></FullAV>
+            <div className="prose prose-invert">
               <p>After a panel co-hosted by my advisor, we let the audience take the game for a spin themselves. I was out-of-my-mind with nervous energy...but overall, everyone loved it! Mission success!</p>
             </div>
-            <FallbackVideo 
-              location="/exhibit.webm" 
-              fallback={exhibitFallback}
+            <FullAV 
+              location="/games/ez/ez_glitched.webm" 
+              fallback={glitchedFallback}
               caption="The event's dress code might have made things a little awkward for players..."
-              ></FallbackVideo>
-            <div className="prose prose-gray">
+              dark
+              ></FullAV>
+            <div className="prose prose-invert">
             <h3 className="text-3xl">Aftermath</h3>
               <p>
                 After the event, the game was further polished and has become a mainstay at events for my advisor's Serious Games Project!

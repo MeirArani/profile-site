@@ -6,7 +6,7 @@ import buggyFallback from '@/public/games/tenjin/buggy_fallback.webp'
 import dinoFallback from '@/public/games/tenjin/dino_fallback.webp'
 import raceFallback from '@/public/games/tenjin/race_fallback.webp'
 import mainFallback from '@/public/games/tenjin/main_fallback.webp'
-import { FallbackVideo } from "@/components/full-video";
+import { FullAV } from "@/components/full-av";
 import {useTranslations} from 'next-intl';
 
 export const dynamic = 'force-dynamic'
@@ -16,7 +16,7 @@ export default function Page({params: locale}) {
   return (
     <section className="lg:mx-24 md:mx-16 xl:mx-48 2xl:mx-72">
         <h1 className={`font-tenjin text-5xl mb-6`}>Tenjin Dash</h1>
-        <FallbackVideo location="/games/tenjin/tenjindash.webm" fallback={mainFallback}></FallbackVideo>
+        <FullAV location="/games/tenjin/tenjindash.webm" fallback={mainFallback}></FullAV>
         <div>
           <div>
               <ul className="text-sm">
@@ -29,11 +29,11 @@ export default function Page({params: locale}) {
           <div className="prose prose-gray">
             <h3 className="-mt-2">An arcade-style racing experience inspired by the physical control schemes from games like <i>World Class Track Meet</i>.</h3>
           </div>
-          <FallbackVideo 
+          <FullAV 
               location="/games/tenjin/tenjin_race.webm" 
               fallback={raceFallback}
               caption="The sweet taste of victory..."
-            ></FallbackVideo>
+            ></FullAV>
           <div className="mb-1">
             <h2 className="text-5xl mb-4">Background</h2>
             <h3 className="text-3xl">Prototype&mdash;<i>DynoDash!</i></h3>
@@ -45,11 +45,11 @@ export default function Page({params: locale}) {
                 Tasked with designing a simple <a href="https://en.wikipedia.org/wiki/Serious_game">serious game</a> aimed at children, I considered concepts centered on exercise and education before arriving at a rough design that combined the two.
               </p>
             </div>
-            <FallbackVideo 
+            <FullAV 
               location="/games/tenjin/dino_buggy.webm" 
               fallback={buggyFallback}
               caption="Early builds were...a little buggy."
-            ></FallbackVideo>
+            ></FullAV>
             <div>
               <div className="prose prose-gray mb-4">
                 <p>
@@ -62,11 +62,11 @@ export default function Page({params: locale}) {
                   After a few months of non-stop struggles against Unity, and following many sleepless nights spent red-eyed&mdash;bringing myself up to speed with C#'s many idiosyncrasi&mdash;<b><i>cough</i></b>&mdash;I mean er....<i>'novel paradigms'</i>&mdash;I finally put together a decent 'alpha' build, which we showcased at local events in summer/fall 2022.
                 </p>
               </div>  
-              <FallbackVideo 
+              <FullAV 
               location="/games/tenjin/dino_run.webm" 
               fallback={dinoFallback}
               caption="The kids love it!"
-              ></FallbackVideo>
+              ></FullAV>
               <div className="prose prose-gray mb-4">
                 <p>
                 Since this was my first attempt at real game development...lets just say that the road was <b><i>veeeeery</i></b> bumpy. Although I had a CS degree and a lifetime of computer/game obsession under my belt...settling into the strategies and paradigms of game engines like Unity or Unreal is a far cry from the world I knew. Looking back on my early code now, let's just say it's probably for the best we leave those branches unpublished...
@@ -98,19 +98,19 @@ export default function Page({params: locale}) {
                 And at last...it was time for the most feared concept in any game developer's mind: <b><i>demo time.</i></b> I, my advisor, and a few underclassmen-turned-assistants found ourselves at the <a href="https://resolatenjin.jp/hall/"><i>Resola Hall</i></a>, surrounded by a legion of salarymen clad in businesswear. 
               </p>
             </div>
-            <FallbackVideo 
+            <FullAV 
               location="/games/tenjin/panel.webm" 
               fallback={panelFallback}
               caption="Seeing my own game presented was an incredibly surreal sight."
-              ></FallbackVideo>
+              ></FullAV>
             <div className="prose prose-gray">
               <p>After a panel co-hosted by my advisor, we let the audience take the game for a spin themselves. I was out-of-my-mind with nervous energy...but overall, everyone loved it! Mission success!</p>
             </div>
-            <FallbackVideo 
+            <FullAV 
               location="/games/tenjin/exhibit.webm" 
               fallback={exhibitFallback}
               caption="The event's dress code might have made things a little awkward for players..."
-              ></FallbackVideo>
+              ></FullAV>
             <div className="prose prose-gray">
             <h3 className="text-3xl">Aftermath</h3>
               <p>
