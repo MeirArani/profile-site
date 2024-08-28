@@ -17,21 +17,30 @@ export default function Page({params: locale}) {
   return (
     <section className="lg:mx-72 md:mx-16">
         <EnemyZeroLogo></EnemyZeroLogo>
+        <div className="flex flex-col items-center text-center mt-12 mb-12 text-2xl md:text-3xl text-white font-baskervvile">
+            <h3>Laura is awake. <br/>She shouldn't be.</h3>
+            <h3 className="mt-6">Something else is on-board.</h3>
+            <h3 className=" text-red-700">It shouldn't be.</h3>
+          </div>
         <div>
           <FullAV
           fallback={walkingFallback}
           ></FullAV>
-          <div>
-              <ul className="text-sm">
+          <div className="flex flex-col items-center text-center mt-12 text-2xl md:text-3xl text-white font-baskervvile">
+            <h3>A labyrinth of iron and steel. </h3>
+            <h3 className="mt-4">A species beyond comprehension.</h3>
+            <h3 className="mt-4">A fight against the senses.</h3>
+            <br className="my-5"></br>
+            <h3>Laura can hear it.</h3>
+            <h3 className="text-red-700"><i>Can you?</i></h3>
+          </div>
+          <div className="mt-8">
+              <ul className="md:text-xl">
                 <li><b>Game Engine:</b> Unreal</li>
                 <li><b>Genre:</b> Horror/Adventure</li>
                 <li><b>Control Scheme:</b> VR, Spatial Audio</li>
                 <li><b>Created:</b> Oct. 2023</li>
               </ul>
-          </div>
-          <div className=" mt-4 md:text-2xl text-white font-baskervvile">
-            <h3>Laura is awake. <br/>She shouldn't be.</h3>
-            <h3><br/>Something else is on-board. <br/><i className=" text-red-700">It shouldn't be.</i></h3>
           </div>
           <FullAV location="/games/ez/ez_walking.webm" fallback={walkingFallback} dark></FullAV>
           <FullAV 
