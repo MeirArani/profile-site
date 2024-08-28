@@ -1,6 +1,6 @@
 export function TenjinLogo(props) { 
     return(
-        <div className={`relative font-tenjin text-5xl text-center bg-clip-text text-transparent`}>
+        <div className={`relative block whitespace-nowrap font-tenjin text-5xl text-center bg-clip-text text-transparent`}>
             <h2 className="block bg-gradient-to-br from-cyan-300  to-pink-300 z-10 from-50% bg-clip-text text-transparent">
                 天神
                 <br />
@@ -16,6 +16,25 @@ export function TenjinLogo(props) {
                 <br />
                 <span>ダッシュ</span>
             </h2>
+        </div>
+    )
+}
+
+export function EnemyZeroLogo(props) { 
+    return(
+        <div className={`relative font-enemyzero text-5xl text-center text-white w-fit`}>
+            <h1 className="block whitespace-nowrap tracking-[0.5rem] md:tracking-[2rem]">
+                <span className="text-red-800">E</span>nemy <span className="text-red-800">Z</span>ero
+            </h1>
+        </div>
+    )
+}
+
+export function BeautyLogo(props) {
+    return (
+        <div className="relative font-beauty text-6xl md:text-7xl text-center">
+            <h1 className="block whitespace-nowrap text-[#fa6b91] z-50">Beauty</h1>
+            <h1 className="block whitespace-nowrap absolute top-1 -left-0.5 text-[#211166] -z-10">Beauty</h1>
         </div>
     )
 }

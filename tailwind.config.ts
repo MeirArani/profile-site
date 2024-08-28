@@ -16,7 +16,7 @@ export default {
         'tenjin': ["Reggae One"],
         'enemyzero': ["Smooch Sans, sans-serif"],
         'baskervvile': ["Baskervville, serif"],
-          
+        'beauty': ["Eagle Lake, serif"]
       },
       screens: {
         '3xl': '1920px',

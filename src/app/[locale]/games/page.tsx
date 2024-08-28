@@ -1,10 +1,11 @@
 'use client'
 
 import tenjinBackground from '@/public/games/tenjin/tenjin_background.webp'
-import { TenjinLogo } from '@/components/logos';
 import { FullBanner } from '@/components/wide-poster';
 import {useTranslations} from 'next-intl';
-
+import EZBackground from "@/public/games/ez/bannerbackground.webp"
+import BeautyBackground from "@/public/games/beauty/KeyProto.webp"
+import { EnemyZeroLogo, TenjinLogo, BeautyLogo } from "@/components/logos";
 
 export const dynamic = 'force-dynamic'
 export const runtime = 'edge';
@@ -21,8 +22,8 @@ export default function Page({params: locale}) {
         <div>
             <h2 className="font text-4xl">Prototypes</h2>
             <div>
-                <h3 className="font font-light text-3xl"><i>Enemy Zero</i></h3>
-                <h3 className="font font-light text-3xl"><i>Beauty</i></h3>
+                <FullBanner href="/games/enemyzero" backgroundImg={EZBackground} logo={<EnemyZeroLogo/>} title="EnemyZero"></FullBanner>
+                <FullBanner href="/games/beauty" backgroundImg={BeautyBackground} logo={<BeautyLogo/>} title="Beauty"></FullBanner>
             </div>
         </div>
         <div>
