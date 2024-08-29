@@ -32,7 +32,6 @@ export default function Page({params: locale}) {
       
       <div>
         <p className="prose prose-2xlg mb-2" dangerouslySetInnerHTML={{__html: t.raw('introOne')}} />
-        <p className="prose prose-neutral" dangerouslySetInnerHTML={{__html: t.raw('introTwo')}} />
       </div>
       
       <ul className="font-sm w-full mt-5 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300 md:w-fit">
