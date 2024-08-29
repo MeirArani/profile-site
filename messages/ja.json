@@ -3,8 +3,7 @@
         "greeting": "やあ、",
         "followUp": "ミアーです。",
         "followUp2": "よろしく。",
-        "introOne": "I'm an artist, aspiring game designer, and graduate student at Kyushu University. I <a href=\"en/games\">develop games</a>,&nbsp;<a href=\"en/photography\">shoot film</a>,&nbsp;and&nbsp;<a href=\"en/music\">compose music</a> in my spare time. I've <a href='en/games/tenjin' target=\"_blank\">created games for companies</a> and <a href=\"https://youtu.be/tx22WrInPYY?t=6602\" target=\"_blank\">taught an AI to write a movie</a> (before it was cool)!",
-        "introTwo": "I'm currently researching games accessibility tech for the visually impaired&mdash;designing tools to streamline accessibility development. In my free time I design my own game concepts, and occasionally find the time to develop prototypes. <a href=\"/en/work\">Check out my work for more details.</a>"
+        "intro": "私はアーティスト、ゲームデザイナー志望、九州大学で勉強している大学院生です。暇なときに<games>ゲーム開発</games>、<photos>撮影</photos>、<music>作曲などします</music>。<tenjin>会社へとゲームを作り</tenjin>、<hommer>映画の脚本を書くことをAIに学習させたこともあります</hommer>！ 今や目が見えない人に対応するアクセシビリティ技術を研究し、それをより楽に開発できるようなツールを企画しています。<work>私の活動も見てね</work>！"
     },
     "Work": {
 
