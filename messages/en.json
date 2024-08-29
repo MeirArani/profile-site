@@ -7,7 +7,65 @@
       "intro": "I'm an artist, aspiring game designer, and graduate student at Kyushu University. I <games>develop games</games>, <photos>shoot film</photos>, and <music>compose music</music> in my spare time. I've <tenjin>created games for companies</tenjin> and <hommer>taught an AI to write a movie</hommer> (before it was cool)! I'm currently researching new games accessibility tech for the visually impaired—designing tools to streamline accessibility development. <work>Check out my work for more details.</work>"
     },
     "Work": {
-        
+      "Card": {
+        "name": "Meir Arani",
+        "location": "Fukuoka, Japan",
+        "uni": "Kyushu University",
+        "point1": "Game Design",
+        "point2": "Programming",
+        "point3": "Writing"
+      },
+      "Education": {
+        "header": "Education",
+        "Kyushu": {
+          "name": "Kyushu University",
+          "dept": "Graduate School of Design",
+          "desc": "I am currently pursuing a graduate degree in design, researching under <kuma>Hiroyuki Matsuguma's serious games project.</kuma>"
+        },
+        "OU": {
+          "name": "The University of Oklahoma",
+          "deg1": "B.Sc. in Computer Science with Honors",
+          "deg2": "B.A. in Japanese with Honors",
+          "deg3": "Minor in Mathematics",
+          "desc": "I was designated an <scholar>Oklahoma State Regents Scholar</scholar> and received <hawes>Olive Hawes Scholarship.</hawes> I also co-authored <research>several research papers.</papers> under <le>Dr. Le Gruenwald.</le>"
+        },
+        "OSSM": {
+          "name": "The Oklahoma School of Science & Mathematics",
+          "desc": "I attended one of America's <brag1>most prestigious</brag1> <brag2>high schools</brag2> where I was distinguished as a <hefner>Hefner Scholar</hefner> by the <foundation>Robert & MeiLi Hefner Foundation</foundation>"
+        }
+      },
+      "Employment": {
+        "header": "Employment",
+        "Nikken": {
+          "name": "Nikken Sekkei",
+          "title": "Contracted Game Collaboration—<i>Tenjin Dash</i>",
+          "desc": "I developed <tenjin>Tenjin Dash</tenjin> for <nikken>Nikken Sekkei's</nikken> 2022 event <event>都市DXフォーラム IN 九州.</event> The collaboration was performed under the guidance of my research advisor."
+        },
+        "NextThought": {
+          "name": "NextThought",
+          "title": "Continuous Integration Manager",
+          "desc": "I developed and maintained <nt>NextThought’s</nt> continuous integration software. I also managed many of the company's machines and sub-networks."
+        }
+      },
+      "Expertise": {
+        "header": "Expertise",
+        "Programming": {
+          "name": "Programming",
+          "desc1": "Proficient in several programming languages",
+          "desc2": "Java, C#, C++, Python, Javascript, etc.",
+          "desc3": "Development Experience in Unity, Unreal, and Godot"
+        },
+        "Japanaese": {
+          "name": "Japanese",
+          "desc1": "Certified Japanese proficiency at <b>JLPT N2</b> level",
+          "desc2": "Skilled in Japanese-English translation",
+          "desc3": "Intermediate Japanese speaking ability"
+        },
+        "Art": {
+          "name": "Art",
+          "desc1": "Skilled in writing, photography, editing, and music composition"
+        }
+      }
     },
     "Games": {
       "Tenjin": {
