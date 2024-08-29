@@ -24,7 +24,7 @@ export function FullAV(props) {
                   autoPlay={inView}
                   playsInline
                   src={props.location}
-                  className="w-full md:rounded-xl"
+                  className="w-full md:rounded-xl not-prose"
                   poster={props.fallback.src}
                 >
                   {image}
@@ -35,9 +35,9 @@ export function FullAV(props) {
 
   return (
     
-    <div className={`relative flex flex-col items-center -ml-6 md:ml-0 w-screen md:w-full my-4 ${props.className}`}>
+    <div className={`relative flex flex-col items-center -ml-6 md:ml-0 w-screen md:w-full mt-8 ${props.className}`}>
       {content}
-      <p className={`mx-4 prose ${props.dark != null ? "prose-invert" : "prose-gray"} text-sm text-center mt-1`}>{props.caption != null ? props.caption : ""}</p>
+      <p className={`mx-4 prose ${props.dark != null ? "prose-invert" : "prose-gray"} mt-1 text-sm md:text-base text-center`}>{props.caption != null ? props.caption : ""}</p>
     </div>
   )
 }

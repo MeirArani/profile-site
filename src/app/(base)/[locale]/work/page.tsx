@@ -58,8 +58,7 @@ export default function Page({params: locale}) {
           I am currently pursuing a graduate degree in design, researching under&nbsp;
           <a href="https://hyoka.ofc.kyushu-u.ac.jp/search/details/K002398/english.html">Hiroyuki Matsuguma's</a>
           &nbsp;
-          <a href="http://macma-lab.heteml.net/">serious games project.</a>&nbsp;
-          You can find more information about my research <a>here.</a>&nbsp;          
+          <a href="http://macma-lab.heteml.net/">serious games project.</a>     
           </p>      
         </div>
         <div>

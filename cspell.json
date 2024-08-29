@@ -9,7 +9,9 @@
         "Beeler",
         "cutscenes",
         "gamification",
-        "salarymen"
+        "interactables",
+        "salarymen",
+        "visionless"
     ],
     "ignoreWords": [],
     "import": []

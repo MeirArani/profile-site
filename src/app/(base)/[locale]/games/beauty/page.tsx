@@ -6,6 +6,7 @@ import { BeautyLogo } from "@/components/logos";
 import BeautyBackground from "@/public/games/beauty/KeyProto.webp"
 import beautyArt from "@/public/games/beauty/beautyTest.webp"
 import beastArt from "@/public/games/beauty/beast.webp"
+import beautyMockup from "@/public/games/beauty/beautyVN.webp"
 
 
 export const dynamic = 'force-dynamic'
@@ -31,7 +32,7 @@ export default function Page({params: locale}) {
           </div>
           <div className="mb-1">
             <h2 className="text-5xl mb-4">Concept</h2>
-            <h3 className="text-3xl">Premise</h3>
+            <h3 className="text-4xl">Premise</h3>
             <div className="prose prose-gray mb-6">
               <p>
               Our hero awakens by a lake&mdash;as fairytalelike as it is unfamiliar. Admiring the scenic view, he suddenly realizes that he's lost all of his memories.
@@ -52,60 +53,23 @@ export default function Page({params: locale}) {
               </p>
             </div>
             <div>
-            <h3 className="text-3xl">Design</h3>
-              <div className="prose prose-gray mb-4">
-                <p>
-                  Originally themed around dinosaurs (who doesn't love a cute dino?), this prototype saw competing racers dual-wielding JoyCons: one strapped to their leg, with another held in hand. Players ran in-place to control the (on-rails) speed of their character&mdash;challenging their athletic ability&mdash;while using their handheld JoyCon to answer boost-granting quiz questions&mdash;rewarding academic expertise.
-                </p>   
-                <p>
-                  As the game was designed with small children in mind, questions were limited to simple arithmetic. But hey&mdash;<i>you</i> try answering math questions while sprinting like a madman<i>!</i>
-                </p>
-                <p>
-                  After a few months of non-stop struggles against Unity, and following many sleepless nights spent red-eyed&mdash;bringing myself up to speed with C#'s many idiosyncrasi&mdash;<b><i>cough</i></b>&mdash;I mean er....<i>'novel paradigms'</i>&mdash;I finally put together a decent 'alpha' build, which we showcased at local events in summer/fall 2022.
-                </p>
-              </div>  
-              <div className="prose prose-gray mb-4">
-                <p>
-                Since this was my first attempt at real game development...lets just say that the road was <b><i>veeeeery</i></b> bumpy. Although I had a CS degree and a lifetime of computer/game obsession under my belt...settling into the strategies and paradigms of game engines like Unity or Unreal is a far cry from the world I knew. Looking back on my early code now, let's just say it's probably for the best we leave those branches unpublished...
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="mb-4">
-            <h3 className="text-3xl">Evolution</h3>
+            <h3 className="text-4xl">Design</h3>
               <div className="prose prose-gray">
-                <p>Thankfully, I would receive a good reason to refine the game just a few days after completion. My advisor had been working with <a href="https://www.nikken.co.jp/">Nikken Sekkei</a>&mdash;the second largest architectural practice on earth&mdash;<a href="https://built.itmedia.co.jp/bt/articles/2301/30/news178_2.html">on a project</a> to promote future technologies related to architecture, city planning, and urban design in Fukuoka's downtown district, Tenjin. Naturally, games, gamification, and serious games were some of the future technologies on the docket&mdash;leading me to join the project.
+                <p>
+                  <i>Beauty</i> is heavily inspired by the classic 2D action-adventure games of yore&mdash;namely the classic <i>Legend of Zelda</i> titles as well as the 2D games in the <i>Mana</i> series. You can expect plenty of dungeon-exploring, puzzle-solving, enemy-smashing fun here&mdash;but there's also a few tricks up our sleeves. 
+                </p>
+                <h4 className="text-3xl not-prose text-black mb-4">Forming a Bond</h4>
+                <p>
+                  <i>Beauty</i> is a game centered around connections&mdash;the bonds formed between Beauty and Beast, the protagonists and the NPCs they befriend, and even between the player and the player characters. So when it came time to design the game's mechanics, the notion of <i>bonds</i> were already at the forefront of the mind. It didn't take long for me to look towards the works of Josef Fares (<i>Brothers, A Way Out, It Takes Two</i>) for some inspiration. And suddenly...<i>eureka.</i> 
+                </p>
+                <p> 
+                  Why make the gameplay focus on either Beauty or Beast? The narrative was equally shared between them, after all. <i>So why not focus on both at the same?</i> Instead of thinking of <i>Beauty</i> in terms of being a <i>Zelda</i> game...what if it was a <i>Link & Zelda</i> game?
                 </p>
                 <p>
-                  And so, <i>DinoDash</i> (<b>R.I.P.</b>) was quickly repurposed for the occasion&mdash;transforming into <i>Tenjin Dash</i>. The collaboration would culminate a few months later with a formal event held in Tenjin, leaving only a few weeks for me to rebuild the entire game from the <b><i>ground up.</i></b>
+                  Enter <i>Beauty's</i> main design conceit: <b>the simultaneous control of its protagonists.</b> Instead of opting for a co-op experience (although perhaps that can be explored as an optional feature for couch-hungry gamers), <i>Beauty</i> focuses on the challenges of multitasking as both Beauty and Beast. 
                 </p>
-                <p>The ensuing chaos would be another essential game development 'first' for me.</p>
+                <p>And, to re-emphasize the <i>Zelda & Link</i> comparison, both protagonists serve very different roles in the gameplay experience. Beast functions more like your average action hero&mdash;tanking hits during combat while dishing out the lion's share of damage; Beauty, meanwhile, is more focused on supporting Beast in combat&mdash;taking the leading role during puzzle and exploration sections of the game. The synergy of these two very different playstyles allows </p>
               </div>
-          </div>
-          <div className="mb-4">
-            <h3 className="text-3xl">The Big Time</h3>
-            <div className="prose prose-gray">
-              <p>
-                3D models of Tenjin were supplied by Nikken Sekkei, while I was left to design, develop, and present the game myself. Music was supplied by the great <a href="https://www.instagram.com/shilohbeeler/">Shiloh Beeler.</a>
-              </p>
-              <p>
-                As the pressure grew, so did my ambitions. I incorporated an arcade-style 'attract screen,' designed my own cutscenes that introduced the race, and re-wrote much of the game's code to increase the fun-factor with some of that ol' <a href="https://www.youtube.com/watch?v=6PqjBPGAFo0"><i>Sega magic.</i></a>
-              </p>
-              <p>
-                And at last...it was time for the most feared concept in any game developer's mind: <b><i>demo time.</i></b> I, my advisor, and a few underclassmen-turned-assistants found ourselves at the <a href="https://resolatenjin.jp/hall/"><i>Resola Hall</i></a>, surrounded by a legion of salarymen clad in businesswear. 
-              </p>
-            </div> 
-            <div className="prose prose-gray">
-              <p>After a panel co-hosted by my advisor, we let the audience take the game for a spin themselves. I was out-of-my-mind with nervous energy...but overall, everyone loved it! Mission success!</p>
-            </div>
-            <div className="prose prose-gray">
-            <h3 className="text-3xl">Aftermath</h3>
-              <p>
-                After the event, the game was further polished and has become a mainstay at events for my advisor's Serious Games Project!
-              </p>
-              <p>
-                As a first-time development experience, <i>Tenjin Dash</i> was crucial in building my understanding of core game design concepts. The process also allowed me the space to experiment, giving me the chance to find my own techniques, strategies, and voice. It certainly is a rough project, but I'll forever be proud of my little dinos that could... 
-              </p>
             </div>
           </div>
         </div>
