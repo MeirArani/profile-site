@@ -7,6 +7,7 @@ import BeautyBackground from "@/public/games/beauty/KeyProto.webp"
 import beautyArt from "@/public/games/beauty/beautyTest.webp"
 import beastArt from "@/public/games/beauty/beast.webp"
 import beautyMockup from "@/public/games/beauty/beautyVN.webp"
+import explainer from "@/public/games/beauty/explainer.webp"
 
 
 export const dynamic = 'force-dynamic'
@@ -68,7 +69,32 @@ export default function Page({params: locale}) {
                 <p>
                   Enter <i>Beauty's</i> main design conceit: <b>the simultaneous control of its protagonists.</b> Instead of opting for a co-op experience (although perhaps that can be explored as an optional feature for couch-hungry gamers), <i>Beauty</i> focuses on the challenges of multitasking as both Beauty and Beast. 
                 </p>
-                <p>And, to re-emphasize the <i>Zelda & Link</i> comparison, both protagonists serve very different roles in the gameplay experience. Beast functions more like your average action hero&mdash;tanking hits during combat while dishing out the lion's share of damage; Beauty, meanwhile, is more focused on supporting Beast in combat&mdash;taking the leading role during puzzle and exploration sections of the game. The synergy of these two very different playstyles allows </p>
+                <p>And, to re-emphasize the <i>Zelda & Link</i> comparison, both protagonists serve very different roles in the gameplay experience. Beast functions more like your average action hero&mdash;tanking hits during combat while dishing out the lion's share of damage; Beauty, meanwhile, is more focused on supporting Beast in combat&mdash;instead taking a leading role during puzzle and exploration sections. The synergy of these two very different playstyles allows for a lot of creative mechanics and memorable action/puzzle set-pieces. 
+                </p>
+                <FullAV
+                fallback={explainer}
+                caption="A rough sketch of the game's controls. Each character takes up one symmetrical half of the controller&mdash;having their own movement stick, attack (shoulder) buttons, and special ability (d-pad/face) buttons."
+                ></FullAV>
+                <p>
+                  Take, for example, Beauty's supporting role during combat. Combined with Puck's magic abilities, Beauty could focus on providing healing, buffs, and combo setups for Beast, while also perhaps accomplishing a few different sub-objectives of their own. Enemies could drop magical energies that only Beauty could pick up&mdash;requiring players to intelligently weave Beauty through an active combat zone while Beast kites enemies around the field. Instead of conventional combat, Beauty might use magical projectiles to hitstun enemies or provide debuffs that Beast could utilize in his combat strategies; or maybe Beast could throw enemies towards Beauty, controlling enemy placement while also doing massive damage to foes.    
+                </p>
+                <p>
+                  The same is also true on the flipside. Beast could utilize his overwhelming strength and speed in puzzle sections where Beauty might be lacking. He could throw items, burst through walls, move heavy objects, ascend heights, or perform any other puzzle idiom that might prove interesting. Providing players (and the designers) with two unique characters to solve puzzles with simultaneously opens up the floodgates to interesting puzzle design and thoughtful ludonarrative integration. 
+                </p>
+                <h4 className="text-3xl not-prose text-black mb-4">Crafting a Diverse World</h4>
+                <p>
+                  Of course, there's a lot more to a good <i>Zelda</i> style game than combat alone. Players also crave a unique and diverse world filled with interesting locales and set-pieces. <i>Beauty</i> pulls from real world myths and legends from around the globe, coloring the game's locales, characters, and mechanics with varied and unique influences.
+                </p>
+                <p>
+                  Three major "zones" have already been developed for the game&mdash;dividing the world into fantasy environments with a European, Middle Eastern, and Far East flavor. A great deal of thought and research has gone into the particular fairytales from each of these cultures (pulling from sources such as the works of the Brothers Grimm or from the <i>Arabian Nights</i>). Although these stories already felt close to home for both me and Zhu, coming from Iranian/American and Chinese backgrounds respectively. We hope to fill <i>Beauty's</i> world with rich and interesting characters, enemies, environments, and mechanics inspired by these equally rich and interesting cultures. 
+                </p>
+                <FullAV
+                fallback={beautyMockup}
+                caption="A mock of the dialogue UI."
+                ></FullAV>
+                <p>
+                  Beyond just settings, we plan to pack <i>Beauty</i> with interesting NPC characters that form the backbone of the game's moment-to-moment narrative pacing. Our protagonists will encounter many characters as they explore the world. The duo will learn of their backstories and problems, find ways to aid them through their quests, and eventually resolve their issues&mdash;learning more about themselves and their own relationship in the process. NPC characters will, of course, be themed based upon the zone they live in&mdash;often being inspired by characters commonly found in the respective folklore, although with some new twists to strengthen the world and stories of <i>Beauty.</i>
+                </p>
               </div>
             </div>
           </div>
