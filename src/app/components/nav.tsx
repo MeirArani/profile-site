@@ -23,7 +23,7 @@ const navItemsJA = {
     name: 'ホーム',
   },
   '/work': {
-    name: '生活',
+    name: '活動',
   },
   '/games': {
     name: 'ゲーム',

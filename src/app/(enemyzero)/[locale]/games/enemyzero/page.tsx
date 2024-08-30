@@ -17,7 +17,7 @@ export const dynamic = 'force-dynamic'
 export const runtime = 'edge';
 export default function Page({params: locale}) {
   return (
-    <section className="lg:mx-72 md:mx-16">
+    <section className="lg:mx-48 md:mx-16 xl:mx-72 2xl:mx-72">
         <EnemyZeroLogo></EnemyZeroLogo>
         <div className="flex flex-col items-center text-center mt-12 mb-12 text-2xl md:text-3xl text-white font-baskervvile">
             <h3>Laura is awake. <br/>She shouldn't be.</h3>
@@ -48,7 +48,7 @@ export default function Page({params: locale}) {
             <h2 className="text-5xl mb-2">Concept</h2>
             <div>
               <h3 className="text-3xl">Story</h3>
-              <div className="prose prose-invert">
+              <div className="prose prose-invert w-full">
                 <p>
                   Laura Lewis is suddenly awakened from her cryosleep on the space station AKI&mdash;a biological research station located in deep-space. The cause? An explosion. Something unknown&mdash;something <i>alien</i>&mdash;has found its way onto the ship.
                 </p>

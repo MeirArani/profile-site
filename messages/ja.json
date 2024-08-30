@@ -3,22 +3,100 @@
         "greeting": "やあ、",
         "followUp": "ミアーです。",
         "followUp2": "よろしく。",
-        "introOne": "I'm an artist, aspiring game designer, and graduate student at Kyushu University. I <a href=\"en/games\">develop games</a>,&nbsp;<a href=\"en/photography\">shoot film</a>,&nbsp;and&nbsp;<a href=\"en/music\">compose music</a> in my spare time. I've <a href='en/games/tenjin' target=\"_blank\">created games for companies</a> and <a href=\"https://youtu.be/tx22WrInPYY?t=6602\" target=\"_blank\">taught an AI to write a movie</a> (before it was cool)!",
-        "introTwo": "I'm currently researching games accessibility tech for the visually impaired&mdash;designing tools to streamline accessibility development. In my free time I design my own game concepts, and occasionally find the time to develop prototypes. <a href=\"/en/work\">Check out my work for more details.</a>"
+        "intro": "私はアーティスト、ゲームデザイナー志望、九州大学で勉強している大学院生です。暇なときに<games>ゲーム開発</games>、<photos>撮影</photos>、<music>作曲などします</music>。<tenjin>会社へとゲームを作り</tenjin>、<hommer>映画の脚本を書くことをAIに学習させたこともあります</hommer>！ 今や目が見えない人に対応するアクセシビリティ技術を研究し、それをより楽に開発できるようなツールを企画しています。<work>私の活動も見てね</work>！"
     },
     "Work": {
-
+      "Card": {
+        "name": "ミアー・アラニ",
+        "location": "福岡市",
+        "uni": "九州大学芸術工学部",
+        "job": "大学院生",
+        "point1": "ゲームデザイン",
+        "point2": "プログラミング",
+        "point3": "執筆"
+      },
+      "Education": {
+        "header": "教育",
+        "Kyushu": {
+          "name": "九州大学",
+          "dept": "大学院芸術工学府",
+          "desc": "<serious>シリアスゲームプロジェクト</serious>の<kuma>松隈浩之</kuma>の下で、デザインの大学院学位に向いて活動しています。"
+        },
+        "OU": {
+          "name": "オクラホマ大学",
+          "deg1": "学士 (コンピューター科学)",
+          "deg2": "学士 (日本語)",
+          "deg3": "数学副専攻",
+          "desc": "<scholar>Oklahoma State Regents Scholar</scholar> に決定され、<hawes>Olive Hawes Scholarship</hawes> を受けました。<le>Le Gruenwald</le> 博士の下で<research>いくつかの研究論文</research>を共同執筆しました。>"
+        },
+        "OSSM": {
+          "name": "The Oklahoma School of Science & Mathematics",
+          "desc": "アメリカの<brag1>最も名誉ある</brag1>高等学校の<brag2>一つ</brag2>に通って、<foundation>Robert & MeiLi Hefner Foundation</foundation> によって <hefner>Hefner Scholar</hefner> と決定されました。"
+        }
+      },
+      "Employment": {
+        "header": "職歴",
+        "Nikken": {
+          "name": "日建設計",
+          "title": "ゲームコラボ ―<i>天神ダッシュ</i>—",
+          "skills": "C#、 Unity、 企画",
+          "desc": "<nikken>日建設計</nikken>開催の<event>都市DXフォーラム IN 九州 2022</event> で展示するため、<tenjin><i>天神ダッシュ</i></tenjin>を開発しました。研究顧問の下でコラボが行われました。"
+        },
+        "NextThought": {
+          "name": "NextThought",
+          "title": "インテグレーションマネージャ",
+          "skills": "Jenkins、 Java、 開発者経営",
+          "desc": "インテグレーションソフトの開発と維持を担当しました。"
+        }
+      },
+      "Expertise": {
+        "header": "専門知識",
+        "Programming": {
+          "name": "プログラミング",
+          "desc1": "いくつかのプログラミング言語で堪能",
+          "desc2": "Java、C#、 C++、 Python、 Javascript など",
+          "desc3": "Unity, Unreal, and Godot の開発経験"
+        },
+        "Japanese": {
+          "name": "日本語",
+          "desc1": "日本語能力試験 N2",
+          "desc2": "日本語 － 英語 翻訳",
+          "desc3": "日本語会話 － 中級"
+        },
+        "Art": {
+          "name": "アート",
+          "desc1": "執筆、撮影、編集、作曲"
+        }
+      }
     },
     "Games": {
-        
-        "Tenjin": {
-
-        },
-        "EnemyZero": {
-
-        },
-        "Beauty": {
-
-        }
+      "title": "Games",
+      "completed": "Completed Projects",
+      "Tenjin": {
+        "title": "Tenjin Dash",
+        "desc": "You are the controller in this high-octane race through the streets of Tenjin! Inspired by exercise-oriented game design of <i>World Class Track Meet</i> and<i>Wii Fit</i>."
+      },
+      "prototypes": "Prototypes",
+      "EnemyZero": {
+        "title": "Enemy Zero",
+        "desc": "A proof-of-concept VR remake of WARP's cult classic horror game <i>Enemy Zero!</i>"
+      },
+      "Beauty": {
+        "title": "Beauty",
+        "desc": "A globetrotting adventure exploring the myths and legends of world culture. Inspired by 2D action-adventure classics (<i>Zelda, Mana</i>) and modern narrative masterpieces (<i>Brothers: A Tale of Two Sons</i>), presented in the style of a BL romance."
+      },
+      "concept": "Concepts",
+      "Grace": {
+        "title": "Grace Beneath The Pines",
+        "desc": ""
+      },
+      "Corporate": {
+        "title": "Corporate Ladder",
+        "desc": ""
+      },
+      "Houses": {
+        "title": "Bad Houses",
+        "desc": ""
+      }
     }
 }

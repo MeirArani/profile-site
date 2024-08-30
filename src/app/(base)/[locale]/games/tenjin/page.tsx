@@ -14,7 +14,7 @@ export const runtime = 'edge';
 export default function Page({params: locale}) {
   const t = useTranslations('Games.Tenjin');
   return (
-    <section className="lg:mx-24 md:mx-16 xl:mx-48 2xl:mx-72">
+    <section className="lg:mx-24 md:mx-16 xl:mx-72 2xl:mx-72">
         <h1 className={`font-tenjin text-5xl mb-6`}>Tenjin Dash</h1>
         <FullAV location="/games/tenjin/tenjindash.webm" fallback={mainFallback}></FullAV>
         <div>
