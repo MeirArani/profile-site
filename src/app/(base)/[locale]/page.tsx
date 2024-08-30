@@ -40,7 +40,6 @@ export default function Page({params: locale}) {
             tenjin: (chunks) => <Link href="/games/tenjin">{chunks}</Link>,
             hommer: (chunks) => <Link href="https://youtu.be/tx22WrInPYY?t=6602" target="_blank">{chunks}</Link>,
             work: (chunks) => <Link href="/work">{chunks}</Link>,
-            em: () => "&mdash;"
           })}
         </p>
       </div>

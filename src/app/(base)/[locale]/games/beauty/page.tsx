@@ -15,7 +15,7 @@ export const runtime = 'edge';
 export default function Page({params: locale}) {
   const t = useTranslations('Games.Tenjin');
   return (
-    <section className="lg:mx-24 md:mx-16 xl:mx-48 2xl:mx-72">
+    <section className="lg:mx-48 md:mx-16 xl:mx-72 2xl:mx-72">
         <BeautyLogo></BeautyLogo>
         <h3 className="mt-6"><i>Co-designed with Zhu Yiwen</i></h3>
         <FullAV className="" fallback={BeautyBackground}></FullAV>
@@ -94,6 +94,25 @@ export default function Page({params: locale}) {
                 ></FullAV>
                 <p>
                   Beyond just settings, we plan to pack <i>Beauty</i> with interesting NPC characters that form the backbone of the game's moment-to-moment narrative pacing. Our protagonists will encounter many characters as they explore the world. The duo will learn of their backstories and problems, find ways to aid them through their quests, and eventually resolve their issues&mdash;learning more about themselves and their own relationship in the process. NPC characters will, of course, be themed based upon the zone they live in&mdash;often being inspired by characters commonly found in the respective folklore, although with some new twists to strengthen the world and stories of <i>Beauty.</i>
+                </p>
+              </div>
+              <h2 className="text-5xl mb-4">Background</h2>
+                <div className="prose prose-gray">
+                  <p>Zhu, a friend of mine at Kyushu University, approached me with the original premise for <i>Beauty</i> in the early months of 2024. They had crafted the outline of the game's narrative&mdash;its world, characters, and premise&mdash;but they hadn't given the gameplay design much thought yet. I was really taken by their idea and started dreaming up how I would implement such a premise's gameplay mechanics in my freetime. It didn't take long for me to come up with something that got them excited, and we were off to the races.</p>
+                </div>
+              <h3 className="text-4xl">Development</h3>
+              <div className="prose prose-gray">
+                <p>
+                  I've always desired to grow my game development experience through my prototype projects, so picking Godot as our target engine felt like the natural choice. I had finally built enough experience up to understand the rough shapes of both Unity and Unreal&mdash;their strengths, weaknesses, paradigms, and peculiarities&mdash;but the recently popular Godot had managed to escape my attention. On top of that, <i>Beauty</i> featured the least complex control scheme I had implemented up to that point (no VR or JoyCon hackery this time!) so using a newer, underdeveloped engine like Godot still felt like a safe choice. How hard could a 2D action game be?   
+                </p>
+                <p>
+                  Well, the answer is "not <i>that</i> hard"...but unfortunately time has ended up getting the better of both me and Zhu. They started their own job-hunt not too long after we commenced our work, while some deaths in my family sent me home to deal with certain situations. A basic Godot prototype commenced production, but both of us have had no choice but to put the project on hold until we can find work, settle our personal lives, and (of course) conquer the graduate thesis deadline which looms above us...
+                </p>
+                <p>
+                  Despite development hurdles we are both still very passionate about the project. We often chat about new mechanic ideas, story beats, and character concepts that keep us very interested in making this project a reality one day soon. I'm sure <i>Beauty</i> won't remain just a fairytale for long.  
+                </p>
+                <p>
+                  <i>Until then...</i>
                 </p>
               </div>
             </div>
