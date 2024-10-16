@@ -1,103 +1,109 @@
 {
-    "Home": {
-      "greeting": "Hi.",
-      "followUp": "I'm Meir. Nice to meetcha.",
-      "title": "testin'",
-
-      "intro": "I'm an artist, aspiring game designer, and graduate student at Kyushu University. I <games>develop games</games>, <photos>shoot film</photos>, and <music>compose music</music> in my spare time. I've <tenjin>created games for companies</tenjin> and <hommer>taught an AI to write a movie</hommer> (before it was cool)! I'm currently researching new games accessibility tech for the visually impaired—designing tools to streamline accessibility development. <work>Check out my work for more details.</work>"
+  "Home": {
+    "greeting": "Hi.",
+    "followUp": "I'm Meir. Nice to meetcha.",
+    "title": "testin'",
+    "intro": "I'm an artist, aspiring game designer, and graduate student at Kyushu University. I <games>develop games</games>, <photos>shoot film</photos>, and <music>compose music</music> in my spare time. I've <tenjin>created games for companies</tenjin> and <hommer>taught an AI to write a movie</hommer> (before it was cool)! I'm currently researching new games accessibility tech for the visually impaired—designing tools to streamline accessibility development. <work>Check out my work for more details.</work>"
+  },
+  "Work": {
+    "Card": {
+      "name": "Meir Arani",
+      "location": "Fukuoka, Japan",
+      "uni": "Kyushu University",
+      "job": "Graduate Student",
+      "point1": "Game Design",
+      "point2": "Programming",
+      "point3": "Writing"
     },
-    "Work": {
-      "Card": {
-        "name": "Meir Arani",
-        "location": "Fukuoka, Japan",
-        "uni": "Kyushu University",
-        "job": "Graduate Student",
-        "point1": "Game Design",
-        "point2": "Programming",
-        "point3": "Writing"
+    "Education": {
+      "header": "Education",
+      "Kyushu": {
+        "name": "Kyushu University",
+        "dept": "Graduate School of Design",
+        "desc": "I am currently pursuing a graduate degree in design, researching under <kuma>Hiroyuki Matsuguma's</kuma> <serious>serious games project.</serious> I was designated a <CEDEC>CEDEC scholar</CEDEC> by the <igda>International Game Developer's Association</igda> in 2024."
       },
-      "Education": {
-        "header": "Education",
-        "Kyushu": {
-          "name": "Kyushu University",
-          "dept": "Graduate School of Design",
-          "desc": "I am currently pursuing a graduate degree in design, researching under <kuma>Hiroyuki Matsuguma's</kuma> <serious>serious games project.</serious>"
-        },
-        "OU": {
-          "name": "The University of Oklahoma",
-          "deg1": "B.Sc. in Computer Science with Honors",
-          "deg2": "B.A. in Japanese with Honors",
-          "deg3": "Minor in Mathematics",
-          "desc": "I was designated an <scholar>Oklahoma State Regents Scholar</scholar> and received <hawes>Olive Hawes Scholarship.</hawes> I also co-authored <research>several research papers.</research> under <le>Dr. Le Gruenwald.</le>"
-        },
-        "OSSM": {
-          "name": "The Oklahoma School of Science & Mathematics",
-          "desc": "I attended one of America's <brag1>most prestigious</brag1> <brag2>high schools</brag2> where I was distinguished as a <hefner>Hefner Scholar</hefner> by the <foundation>Robert & MeiLi Hefner Foundation</foundation>"
-        }
+      "OU": {
+        "name": "The University of Oklahoma",
+        "deg1": "B.Sc. in Computer Science with Honors",
+        "deg2": "B.A. in Japanese with Honors",
+        "deg3": "Minor in Mathematics",
+        "desc": "I was designated an <scholar>Oklahoma State Regents Scholar</scholar> and received <hawes>Olive Hawes Scholarship.</hawes> I also co-authored <research>several research papers.</research> under <le>Dr. Le Gruenwald.</le>"
       },
-      "Employment": {
-        "header": "Employment",
-        "Nikken": {
-          "name": "Nikken Sekkei",
-          "title": "Contracted Game Collaboration—<i>Tenjin Dash</i>",
-          "skills": "C#, Unity, Game Design",
-          "desc": "I developed <tenjin><i>Tenjin Dash</i></tenjin> for <nikken>Nikken Sekkei's</nikken> 2022 event <event>都市DXフォーラム IN 九州.</event> The collaboration was performed under the guidance of my research advisor."
-        },
-        "NextThought": {
-          "name": "NextThought",
-          "title": "Continuous Integration Manager",
-          "skills": "Jenkins, Java, Developer Operations",
-          "desc": "I developed and maintained <nt>NextThought’s</nt> continuous integration software. I also managed many of the company's machines and sub-networks."
-        }
-      },
-      "Expertise": {
-        "header": "Expertise",
-        "Programming": {
-          "name": "Programming",
-          "desc1": "Proficient in several programming languages",
-          "desc2": "Java, C#, C++, Python, Javascript, etc.",
-          "desc3": "Development Experience in Unity, Unreal, and Godot"
-        },
-        "Japanese": {
-          "name": "Japanese",
-          "desc1": "Certified Japanese proficiency at <b>JLPT N2</b> level",
-          "desc2": "Skilled in Japanese-English translation",
-          "desc3": "Intermediate Japanese speaking ability"
-        },
-        "Art": {
-          "name": "Art",
-          "desc1": "Skilled in writing, photography, editing, and music composition"
-        }
+      "OSSM": {
+        "name": "The Oklahoma School of Science & Mathematics",
+        "desc": "I attended one of America's <brag1>most prestigious</brag1> <brag2>high schools</brag2> where I was distinguished as a <hefner>Hefner Scholar</hefner> by the <foundation>Robert & MeiLi Hefner Foundation</foundation>"
       }
     },
-    "Games": {
-      "title": "Games",
-      "completed": "Completed Projects",
-      "Tenjin": {
-        "title": "Tenjin Dash",
-        "desc": "You are the controller in this high-octane race through the streets of Tenjin! Inspired by exercise-oriented game design of <i>World Class Track Meet</i> and<i>Wii Fit</i>."
+    "Employment": {
+      "header": "Employment",
+      "Nikken": {
+        "name": "Nikken Sekkei",
+        "title": "Contracted Game Collaboration—<i>Tenjin Dash</i>",
+        "skills": "C#, Unity, Game Design",
+        "desc": "I developed <tenjin><i>Tenjin Dash</i></tenjin> for <nikken>Nikken Sekkei's</nikken> 2022 event <event>都市DXフォーラム IN 九州.</event> The collaboration was performed under the guidance of my research advisor."
       },
-      "prototypes": "Prototypes",
-      "EnemyZero": {
-        "title": "Enemy Zero",
-        "desc": "A proof-of-concept VR remake of WARP's cult classic horror game <i>Enemy Zero!</i>"
+      "NextThought": {
+        "name": "NextThought",
+        "title": "Continuous Integration Manager",
+        "skills": "Jenkins, Java, Developer Operations",
+        "desc": "I developed and maintained <nt>NextThought’s</nt> continuous integration software. I also managed many of the company's machines and sub-networks."
+      }
+    },
+    "Expertise": {
+      "header": "Expertise",
+      "Programming": {
+        "name": "Programming",
+        "desc1": "Proficient in several programming languages",
+        "desc2": "Java, C#, C++, Python, Javascript, etc.",
+        "desc3": "Development Experience in Unity, Unreal, and Godot"
       },
-      "Beauty": {
-        "title": "Beauty",
-        "desc": "A globetrotting adventure exploring the myths and legends of world culture. Inspired by 2D action-adventure classics (<i>Zelda, Mana</i>) and modern narrative masterpieces (<i>Brothers: A Tale of Two Sons</i>), presented in the style of a BL romance."
+      "Japanese": {
+        "name": "Japanese",
+        "desc1": "Certified Japanese proficiency at <b>JLPT N2</b> level",
+        "desc2": "Skilled in Japanese-English translation",
+        "desc3": "Intermediate Japanese speaking ability"
       },
-      "concept": "Concepts",
-      "Grace": {
-        "title": "Grace Beneath The Pines",
-        "desc": ""
-      },
-      "Corporate": {
-        "title": "Corporate Ladder",
-        "desc": ""
-      },
-      "Houses": {
-        "title": "Bad Houses",
-        "desc": ""
+      "Art": {
+        "name": "Art",
+        "desc1": "Skilled in writing, photography, editing, and music composition"
       }
     }
+  },
+  "Games": {
+    "title": "Games",
+    "completed": "Completed Projects",
+    "Tenjin": {
+      "title": "Tenjin Dash",
+      "desc": "You are the controller in this high-octane race through the streets of Tenjin! Inspired by exercise-oriented game design of <i>World Class Track Meet</i> and<i>Wii Fit</i>."
+    },
+    "prototypes": "Prototypes",
+    "EnemyZero": {
+      "title": "Enemy Zero",
+      "desc": "A proof-of-concept VR remake of WARP's cult classic horror game <i>Enemy Zero!</i>"
+    },
+    "Beauty": {
+      "title": "Beauty",
+      "desc": "A globetrotting adventure exploring the myths and legends of world culture. Inspired by 2D action-adventure classics (<i>Zelda, Mana</i>) and modern narrative masterpieces (<i>Brothers: A Tale of Two Sons</i>), presented in the style of a BL romance."
+    },
+    "concept": "Concepts",
+    "Grace": {
+      "title": "Grace Beneath The Pines",
+      "desc": ""
+    },
+    "Corporate": {
+      "title": "Corporate Ladder",
+      "desc": ""
+    },
+    "Houses": {
+      "title": "Bad Houses",
+      "desc": ""
+    }
+  },
+  "Nav": {
+    "home": "home",
+    "work": "about",
+    "games": "games",
+    "photo": "photos",
+    "music": "music"
+  }
 }

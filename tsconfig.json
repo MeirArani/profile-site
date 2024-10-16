@@ -18,7 +18,8 @@
       "@/components/*": ["src/app/components/*"],
       "@/public/*": ["public/*"],
       "@/pages/*": ["src/app/components/pages/*"],
-      "@/photos/*": ["public/photos/*"]
+      "@/photos/*": ["public/photos/*"],
+      "@/i18n/*": ["src/i18n/*"]
     },
     "incremental": true,
     "plugins": [

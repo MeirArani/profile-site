@@ -1,44 +1,27 @@
-import {Link} from '../../navigation';
+import { useTranslations } from 'next-intl';
+import {Link} from '../../i18n/routing';
+import LocaleSwitcher from './locale-switcher';
 
-const navItemsEN = {
-  '/': {
-    name: 'home',
-  },
-  '/work': {
-    name: 'work',
-  },
-  '/games': {
-    name: 'games',
-  },
-  '/photography': {
-    name: 'photography',
-  },
-  '/music': {
-    name: 'music',
-  },
-};
-
-const navItemsJA = {
-  '/': {
-    name: 'ホーム',
-  },
-  '/work': {
-    name: '活動',
-  },
-  '/games': {
-    name: 'ゲーム',
-  },
-  '/photography': {
-    name: '撮影',
-  },
-  '/music': {
-    name: '音楽',
-  },
-}
-
-export function Navbar({locale}) {
-  console.log(locale);
-  const navItems = locale === "ja" ? navItemsJA : navItemsEN;
+export function Navbar() {
+  const t = useTranslations("Nav");
+  const navItems = {
+    '/': {
+      name: t('home'),
+    },
+    '/work': {
+      name: t('work'),
+    },
+    '/games': {
+      name: t('games'),
+    },
+    '/photography': {
+      name: t('photo'),
+    },
+    '/music': {
+      name: t('music'),
+    },
+  };
+  
   return (
     <aside className="-ml-[8px] mb-5 tracking-tight">
       <div className="lg:sticky lg:top-20">
@@ -46,7 +29,7 @@ export function Navbar({locale}) {
           className="flex flex-row items-start relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
           id="nav"
         >
-          <div className="flex flex-row space-x-0 pr-10 min-w-full justify-between text-sm">
+          <div className="flex flex-row space-x-0 min-w-full justify-between text-sm">
             {Object.entries(navItems).map(([path, { name }]) => {
               return (
                 <Link
@@ -58,6 +41,7 @@ export function Navbar({locale}) {
                 </Link>
               );
             })}
+            <LocaleSwitcher className=""></LocaleSwitcher>
           </div>
         </nav>
       </div>

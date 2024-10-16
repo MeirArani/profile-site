@@ -58,7 +58,9 @@ export default function Page({params: locale}) {
           <p className="w-fit prose prose-stone">
             {t.rich('Education.Kyushu.desc', {
               kuma: (chunks) => <Link href="https://hyoka.ofc.kyushu-u.ac.jp/search/details/K002398/english.html" target="_blank">{chunks}</Link>,
-              serious: (chunks) => <Link href="https://hyoka.ofc.kyushu-u.ac.jp/html/100021083_ja.html" target="_blank">{chunks}</Link>
+              serious: (chunks) => <Link href="https://hyoka.ofc.kyushu-u.ac.jp/html/100021083_ja.html" target="_blank">{chunks}</Link>,
+              CEDEC: (chunks) => <Link href="https://www.igda.jp/2024/09/07/14974/" target="_blank">{chunks}</Link>,
+              igda: (chunks) => <Link href="https://www.igda.jp/" target="_blank">{chunks}</Link>
             })}   
           </p>      
         </div>

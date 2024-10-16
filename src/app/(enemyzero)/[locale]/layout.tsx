@@ -6,7 +6,7 @@ import { Navbar } from '@/components/nav';
 
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server'; 
-import { locales } from 'src/config';
+import { locales } from 'src/i18n/config';
 import {unstable_setRequestLocale} from 'next-intl/server';
 
 export const dynamic = 'force-dynamic'

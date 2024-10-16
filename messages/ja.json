@@ -20,7 +20,7 @@
         "Kyushu": {
           "name": "九州大学",
           "dept": "大学院芸術工学府",
-          "desc": "<serious>シリアスゲームプロジェクト</serious>の<kuma>松隈浩之</kuma>の下で、デザインの大学院学位に向いて活動しています。"
+          "desc": "<serious>シリアスゲームプロジェクト</serious>の<kuma>松隈浩之</kuma>の下で、デザインの大学院学位に向いて活動しています。<igda>IGDA Japan</igda>の<CEDEC>CEDEC 2024スカラーシップ</CEDEC>を受けました。"
         },
         "OU": {
           "name": "オクラホマ大学",
@@ -98,5 +98,12 @@
         "title": "Bad Houses",
         "desc": ""
       }
+    },
+    "Nav": {
+      "home": "ホーム",
+      "work": "活動",
+      "games": "ゲーム",
+      "photo": "撮影",
+      "music": "音楽"
     }
 }

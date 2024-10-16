@@ -93,7 +93,7 @@ if (process.env.npm_lifecycle_event === 'pages:build') {
   await setupDevPlatform();
 }
 
-const withNextIntl = createNextIntlPlugin();
+const withNextIntl = createNextIntlPlugin('./src/i18n/requests.ts');
 
 export default withNextIntl(nextConfig);
 

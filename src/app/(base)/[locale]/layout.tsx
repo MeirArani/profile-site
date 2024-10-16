@@ -6,7 +6,7 @@ import { Navbar } from '@/components/nav';
 
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server'; 
-import { locales } from 'src/config';
+import { locales } from 'src/i18n/config';
 import {unstable_setRequestLocale} from 'next-intl/server';
 
 export const dynamic = 'force-dynamic'
@@ -91,7 +91,7 @@ export default async function LocaleLayout({
       </head>
       <body className="antialiased max-w-full min-h-screen mb-8 flex flex-col md:flex-row mx-4 mt-2 sm:mx-8 md:mx-10 lg:mx-18">
         <NextIntlClientProvider messages={messages}>
-            <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
+            <main className="flex-auto min-w-0 mt-8 flex flex-col px-2 md:px-0">
             <Navbar locale="en"/>
             {children}
           </main>
