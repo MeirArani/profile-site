@@ -92,7 +92,7 @@ export default async function LocaleLayout({
       <body className="antialiased max-w-full min-h-screen mb-8 flex flex-col md:flex-row mx-4 mt-2 sm:mx-8 md:mx-10 lg:mx-18">
         <NextIntlClientProvider messages={messages}>
             <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
-            <Navbar locale="en"/>
+            <Navbar/>
             {children}
           </main>
         </NextIntlClientProvider>
