@@ -13,9 +13,14 @@ import mapSketch from '@/public/games/ez/map_sketch.webp'
 import { FullAV } from "@/components/full-av";
 import {unstable_setRequestLocale} from 'next-intl/server';
 import { EnemyZeroLogo } from "@/components/logos";
+import RichText from "@/components/rich-text";
+import { useTranslations } from "next-intl";
 export const dynamic = 'force-dynamic'
 export const runtime = 'edge';
+
+
 export default function Page({params: locale}) {
+  const t = useTranslations('Games.EnemyZero');
   return (
     <section className="lg:mx-48 md:mx-16 xl:mx-72 2xl:mx-72">
         <EnemyZeroLogo></EnemyZeroLogo>
@@ -36,12 +41,9 @@ export default function Page({params: locale}) {
             <h3>Laura can hear it.</h3>
             <h3 className="text-red-700"><i>Can you?</i></h3>
           </div>
-          <div className="mt-8">
+          <div className="mt-8 prose-invert">
               <ul className="md:text-xl">
-                <li><b>Game Engine:</b> Unreal</li>
-                <li><b>Genre:</b> Horror/Adventure</li>
-                <li><b>Control Scheme:</b> VR, Spatial Audio</li>
-                <li><b>Created:</b> Oct. 2023</li>
+                <RichText invert notProse>{(tags) => t.rich("info", tags) }</RichText>
               </ul>
           </div>
           <div className="mt-8">

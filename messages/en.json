@@ -74,12 +74,109 @@
     "completed": "Completed Projects",
     "Tenjin": {
       "title": "Tenjin Dash",
-      "desc": "You are the controller in this high-octane race through the streets of Tenjin! Inspired by exercise-oriented game design of <i>World Class Track Meet</i> and<i>Wii Fit</i>."
+      "desc": "You are the controller in this high-octane race through the streets of Tenjin! Inspired by exercise-oriented game design of <i>World Class Track Meet</i> and<i>Wii Fit</i>.",
+      "info": "<li><b>Game Engine:</b> Unity</li><li><b>Genre:</b> Racing/Arcade</li><b>Control Scheme:</b> JoyCons, Running<li><b>Release:</b> 2022</li>",
+      "topline": "An arcade-style racing experience inspired by the physical control schemes from games like <i>World Class Track Meet</i>.",
+      "background": {
+        "header": "Background",
+        "sub": "Prototype: <i>DinoDash!</i>",
+        "1": "<p><i>Tenjin Dash</i> came about in June 2022 at the request of my research supervisor, <kuma>Hiroyuki Matsuguma</kuma>. The project would quickly transform from 'simple prototype' to my first true game development challenge.</p><p>Tasked with designing a simple <serious>serious game</serious> aimed at children, I considered concepts centered on exercise and education before arriving at a rough design that combined the two.</p>",
+        "2": "<p>Originally themed around dinosaurs (who doesn't love a cute dino?), this prototype saw competing racers dual-wielding JoyCons: one strapped to their leg, with another held in hand. Players ran in-place to control the (on-rails) speed of their character—challenging their athletic ability—while using their handheld JoyCon to answer boost-granting quiz questions—rewarding academic expertise.</p><p>As the game was designed with small children in mind, questions were limited to simple arithmetic. But hey—<i>you</i> try answering math questions while sprinting like a madman!</p><p>After a few months of non-stop struggles against Unity, and following many sleepless nights spent red-eyed—bringing myself up to speed with C#'s many idiosyncrasies—<b><i>cough</i></b>—I mean er....<i>novel paradigms</i>—I finally put together a decent alpha build, which we showcased at local events in summer/fall 2022.</p>",
+        "3": "Since this was my first attempt at real game development...lets just say that the road was <b><i>veeeeery</i></b> bumpy. Although I had a CS degree and a lifetime of computer/game obsession under my belt...settling into the strategies and paradigms of game engines like Unity or Unreal is a far cry from the world I knew. Looking back on my early code now, let's just say it's probably for the best we leave those branches unpublished..."
+      },
+      "evolution":
+      {
+        "header": "Evolution",
+        "1": "<p>Thankfully, I would receive a good reason to refine the game just a few days after completion. My advisor had been working with <nikken>Nikken Sekkei</nikken>—the second largest architectural practice in the world—<tenjinArticle>on a project</tenjinArticle> to promote future technologies related to architecture, city planning, and urban design in Fukuoka's downtown district, Tenjin. Naturally, games, gamification, and serious games were some of the future technologies on the docket—leading me to join the project.</p><p>And so, <i>DinoDash</i> (<b>R.I.P.</b>) was quickly repurposed for the occasion—transforming into <i>Tenjin Dash</i>. The collaboration would culminate a few months later with a formal event held in Tenjin, leaving only a few weeks for me to rebuild the entire game from the <b><i>ground up.</i></b></p><p>The ensuing chaos would be another essential game development 'first' for me.</p>"
+      },
+      "big":
+      {
+        "header": "The Big Time",
+        "1": "<p>3D models of Tenjin were supplied by Nikken Sekkei, while I was left to design, develop, and present the game myself. Music was supplied by the great <shiloh>Shiloh Beeler.</shiloh></p><p>As the pressure grew, so did my ambitions. I incorporated an arcade-style 'attract screen,' designed my own cutscenes that introduced the race, and re-wrote much of the game's code to increase the fun-factor with some of that ol' <sega><i>Sega magic.</i></sega></p><p>And at last...it was time for the most feared concept in any game developer's mind: <b><i>demo time.</i></b> I, my advisor, and a few underclassmen-turned-assistants found ourselves at the <resola><i>Resola Hall</i></resola>, surrounded by a legion of salarymen clad in businesswear—the perfect attire for a brisk jog.</p>"
+      },
+      "captions":
+      {
+        "race": "The sweet taste of victory...",
+        "buggy": "Early builds were...a little buggy.",
+        "dino": "The kids love it!",
+        "exhibit": "The event's dress code might have made things a little awkward for players..."
+      },
+      "aftermath" :
+        {
+          "header": "Aftermath",
+          "1": "<p>After the event, the game was further polished and has become a mainstay at events for my advisor's Serious Games Project!</p><p>As a first-time development experience, <i>Tenjin Dash</i> was crucial in building my understanding of core game design concepts. The process also allowed me the space to experiment, giving me the chance to find my own techniques, strategies, and voice. It certainly is a rough project, but I'll forever be proud of my little dinos that could... </p>"
+        }
     },
     "prototypes": "Prototypes",
     "EnemyZero": {
       "title": "Enemy Zero",
-      "desc": "A proof-of-concept VR remake of WARP's cult classic horror game <i>Enemy Zero!</i>"
+      "desc": "A proof-of-concept VR remake of WARP's cult classic horror game <i>Enemy Zero!</i>",
+      "info": "<li><b>Game Engine:</b> Unreal</li><li><b>Genre:</b> Horror/Adventure</li><li><b>Control Scheme:</b> VR, Spatial Audio</li><li><b>Release:</b> (Prototype) Oct. 2023</li>",
+      "concept": {
+        "header": "Concept",
+        "Story": 
+        {
+          header: "Story",
+          "1": "<p>Laura Lewis is suddenly awakened from her cryosleep on the space station AKI—a biological research station located in deep-space. The cause? An explosion. Something unknown—something <i>alien</i>—has found its way onto the ship.</p>",
+          "2": "<p>Laura, confused by the chaos, uses the ship's video system to contact her fellow crewmate Parker. A frantic explanation starts pouring out of his mouth before he suddenly comes screeching to a halt. Laura stares on in confusion as he looks away from the monitor. A terrifying shriek sends him rushing for his weapon—but it's already too late: Parker is mutilated by an unknown creature as Laura watches in sheer terror. The most horrifying part? She can't even see the alien monster ripping her friend to shreds.</p><p>The invading creatures seem to be completely invisible to the human eye. And based on the footsteps outside her room, Laura's starting to realize that there's more than just one of these horrifying aliens on-board.</p><p>Join Laura as she explores the AKI! Rescue crewmates, unravel the secrets of the mysterious <e0>E0</e0> project, and search for a way back to earth, all while evading the deadly monsters lurking around every corner.</p>"
+        },
+        "design":
+        {
+          "header": "Design",
+          "overview":
+          { 
+            "header": "Overview",
+            "1": "<p>Enemy Zero takes heavy influence from it's namesake: building upon the same premise, world, and characters found in the original <i>Enemy Zero.</i> Thoughtful new design choices have also been included to refresh Kenji Eno's cult classic for the modern age. Inspired by the best in contemporary horror, adventure, and metroidvanias, and combined with the ultra-immersive cutting edge experiences that only VR can provide, this remake seeks to evolve horror games like Eno's own work did in the 1990s.</p>",
+            "2": "<p>Players find themselves exploring the many decks of the space station AKI, which are themed after the four seasons and segment the game into distinctly themed zones. Players must navigate the ship's treacherous labyrinths—where they encounter narrative set-pieces, solve clever puzzles, and try to survive terrifying enemy encounters—rationing their limited resources all along the way.</p><p><i>Enemy Zero's</i> most interesting twist was its lack of enemy visibility. That's right, these deadly monsters are completely invisible to the naked eye—at least until they're good and dead. So how is a terrified player supposed to cope with such a horrifying situation? One word: <i>Sound.</i></p><p>Laura is given a device that identifies an enemy's distance and orientation (relative to the player) using beeps that vary in pitch (direction) and frequency (distance). This simple, yet ingenious system absolutely enthralls—;even on ancient hardware—creating one of the most creative and intense horror experiences in gaming.</p>"
+          },
+          "visualization":
+          {
+            "header": "Visualization",
+            "1": "<p><b>Just picture it:</b> A mesmerized player, soaking in the atmosphere of the AKI, wandering its halls as they search for their next objective. The unpredictable ambience of the ship—the bursting of steam from its pipes or the creaking and moaning of its steel—has them on constant edge. But it's the sudden beep on their radar—the prelude to a deadly encounter—that forces their heart skip a beat. The sounds grow louder, <i>closer,</i> as the beeps begin to change in pitch. The tense moment causes the player to confuse the radar's pitch directions. They grow increasingly terrified while the monster encircles its prey.</p><p><b><i>It's...behind me...no...to my left?...or is it...oh GOD!</i></b></p><p>The energy-starved player readies their weapon: their absolute last line of defense. They were hoping to escape the monster's grasp undetected—as they know losing their energy stores will cause them problems down the line. But now they have no choice—it's either do, <i>or die.</i> Unfortunately for them, their weapon needs a few seconds to charge up a shot—leaving only a moment's window to fire before overheating.</p>",
+            "2": "<p>The radar's sounds climax in a fury. The player raises their weapon, holds their breath, starts the charge, and prays they remembered their directions right. They hear the sounds of footsteps—;rapidly approaching them. A beep is heard—their weapon ready to fire. A horrifying alien scream explodes upon the player's left ear. They turn and release the trigger. They hear another scream: the creature's final gasp of life. It looks like they guessed right.</p><p><i>But will they be so lucky next time?</i></p><p>Pretty intense, right? <b><i>Now Imagine that in VR.</i></b></p>"
+          },
+          "tricks":
+          {
+            "header": "New Tricks",
+            "1": "<p>Of course, we can do better than to just transplant a 90s game into the modern age. More dynamic enemies (and new ways to 'sense' them), unique weapons, more intricate puzzle design, immersive spatial audio, and a fleshed out story are just a few things planned to improve upon <i>Enemy Zero</i></p><p>Bringing the original's lighting-in-a-bottle design into the contemporary gaming world also lets us to expand upon the game's incredibly brisk pacing. After all, mid-90s CD-ROM games were just as often focused on their awe-inspiring (yet data-hungry) FMV cutscenes as they were their gameplay content—leading to (as I'm sure many of us remember) insanely long load-times for shockingly short game runtimes.</p><p>For example, Laura receives her ace-in-the-hole against the invading aliens—the radar—;literal minutes into the game. There are a few small mix-ups to keep things fresh later in the game, but the overall gameplay loop described here dominates virtually all of the runtime. But why should Laura get such a powerful tool so early on? Why shouldn't she work for it?</p>",
+            "2": "<b>Presenting: <i>the directional microphone</i></b>. In <i>Enemy Zero VR</i>, Laura's omnidirectional radar isn't within reach at the start of the game. Instead, she discovers a rusty shotgun mic while trawling a storage closet for supplies. The mic only amplifies noise in the direction pointed, meaning Laura will have to be constantly on guard for threats...<b><i>All. Around. Her.</i></b></p><p>To make matters worse, the old hunk of junk is also an insane battery hog--meaning Laura will be depleting her precious energy stores (shared with other tools like her weapons) every time she uses it.</p><br></br><i>Stressed yet? </i></p><p>The inclusion of a directional mic is just one of the many interesting features made possible by VR—;where players are free to independently control both of Laura's hands at the same time. Perhaps the player will be wielding a weapon in their free hand, ready to blast away an incoming foe. Or maybe they'll be forced to ferry puzzle items across the AKI. Risky players may opt to use a gun in their free hand, relying on pure reaction instinct to take on enemies; while cautious players may opt for the directional microphone, evading detection as they make their way across the station without a weapon.</p><p>All these ideas, and many more will be found in <i>Enemy Zero VR</i>. The only question left is if you're ready to experience this next evolution of survival horror!</p>"
+          }
+        },
+        "background": 
+        {
+          "header": "Background",
+          "class":
+          {
+            "header": "Class Projects & Strange Dreams",
+            "1": "<p>Kenji Eno has been one of my gaming icons since I came across his offbeat horror classic <i>D</i> while I was in middle school. I've found many of his games deeply compelling—each practically bursting at the seams with creativity. Enemy Zero stood out in particular though. <i>D2</i> might have cohered his vision into something that more-closely resembles modern game design...but <i>Enemy Zero</i> presented a vision of gaming I had never seen before—a world of <b><i>visionless</i></b> gaming—where we must use our other senses in order to 'see.'</p><p>Fast forward a few years, and I found myself in a graduate course for VR design—centered on a final project of our choosing. The idea of an <i>Enemy Zero</i> VR remake had been floating around in my head for some years, so I decided to pull the trigger.</p><p>Of course, I had zero clue what I was signing myself up for...</p>"
+          },
+          "foot":
+          {
+            "header": "Best Foot Forward...",
+            "1": "<p>I knew from the start that I wanted to use the Unreal Engine to develop the project. Why? Because I had never given the engine the <i>ol'</i> (and for once, literal) college try. Looking back, I'm happy I decided to wrestle with the engine under those circumstances...but it absolutely caused me a lot of headaches.</p>",
+            "2": "<p>Since this was my first attempt at real game development...lets just say that the road was <b><i>veeeeery</i></b> bumpy. Although I had a CS degree and a lifetime of computer/game obsession under my belt...settling into the strategies and paradigms of game engines like Unity or Unreal is a far cry from the world I knew. Looking back on my early code now, let's just say it's probably for the best we leave those branches unpublished...</p><p>To make matters worse, I wasn't even targeting something basic with my first Unreal project—we're talking about <b>VR</b> development here. I knew, even at at the time, that it was one of the (if not <i>the</i>) most difficult segment of game development and design out there—right on the cutting edge of what's even possible in the medium. Of course, my first project also involved a non-traditional control scheme (JoyCon based physical movement)...so maybe I'm just a sucker for punishment.</p><p>And the cherry on top? This was a class project—meaning I needed to have something 'final' to present just a few short weeks later. My university's calendar ran on a quarterly system, so each academic period lasted a mere 9 weeks. I would have to go from zero to demo like I was a studio in crunch time--and I was a <i>one man</i> team with <i>zero</i> Unreal or VR development experience.</p>"
+          },
+          "fighting":
+          {
+            "header": "Fighting Uphill",
+            "1": "<p>Well...not exactly. This project was technically a group project. But I think we all know how that goes. Despite having a team of five, only one other member helped out—supplying me with 3D models for the game's assets. Unfortunately though, his expertise was in architecture and definitely not in game development—meaning his models were horribly malformed (messed up UVs, etc.) and required some manual polishing done by me. But to be fair, his field of expertise is clearly less worried about collision detection and more worried about structural logistics and style.</p><p>I designed my own slice of Enemy Zero VR over a few days—level layouts, puzzles, visual theming, and enemy encounters included. My plans were very ambitious considering my timeframe and lack of Unreal/VR experience...but I carried on!</p>",
+            "2": "Within a few weeks, I had a basic working demo of the game's atmosphere. You could wander around the corridors of the AKI—and take in the haunting darkness of the ship in VR! Of course it was far from a final version of anything...but even I'll admit there was something horrifying about turning a corner, seeing the lights in the distance dim—descending into what felt like the void.",
+            "3": "<p>Of course, atmospheric movement alone wasn't going to sell a game...but it certainly would sell a class project. Still, I persisted with what little time I had left—adding weapon support (with a virtual 'holster' that the player could draw from at any time), weapon charging (with visual indicators which light up the weapon), basic puzzle interactables (buttons, slots, items), and even a virtual 'simulation' of earth that was designed as a part of a puzzle for the project.</p><p>There was still some work required to finish a complete vertical slice of the game (enemy AI, weapon logic, spatial audio, improved atmospherics), but my deadline had arrived. And, unfortunately, a few issues with the Unreal engine—including some VR render pipeline quirks and an as-of-yet unresolved shader glitch that sends the game into Nightmare Mode at random—left me with no time to put on the final touches I desired. Still, I was very proud of the work I was able to accomplish in such a short timeframe—especially considering I was essentially working alone from scratch with zero prior experience.</p>",
+            "4": "<p>Other courses, projects, and the graduate thesis looming over me, have kept me from picking up work on the prototype again...but I hope to return to it in due time. I genuinely believe that an <i>Enemy Zero</i> remake (or something very similar) would be the perfect horror game, even some 20 odd years after the original's release. My demo—as meager as it was being birthed from a school project, completed in record time by a complete newbie—had enough scares to hook me at times. And if that isn't what makes for a good game...I don't know what will.</p>"
+          }
+        }
+      },
+      "captions":{
+        "walking": "Exploring the AKI's endless halls.",
+        "outdoors": "A simulation of springtime on earth—one of the many holographic decks found on the AKI.",
+        "gun": "A mockup of Laura's weapon—which can be quickly drawn or re-holstered—;while lights on the gun indicate its current charging status.",
+        "puzzle": "Prototyping puzzles entities in VR—where design possibilities feel boundless compared to standard, non-VR games (sick free-throws included).",
+        "fallback": "Early attempts at VR integration were...rocky, to say the least.",
+        "uv": "I guess 3D architecture software doesn't really care about UV/collision mapping, does it?",
+        "map": "My original rough sketch for the prototype map.",
+        "spooky": "Even I was spooked by this early hallway tests. Although maybe that's just because I was working alone in the lab at 1 AM...",
+        "glitched": "The dreaded shader bug would strike as randomly as it vanished. Although it did make the game look kinda cool."
+      }
     },
     "Beauty": {
       "title": "Beauty",
