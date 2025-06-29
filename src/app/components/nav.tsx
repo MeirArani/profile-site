@@ -1,9 +1,9 @@
 import { useTranslations } from 'next-intl';
-import {Link} from '../../i18n/routing';
+import { Link } from '../../i18n/navigation';
 import LocaleSwitcher from './locale-switcher';
 
 export function Navbar() {
-  const t = useTranslations("Nav");
+  const t = useTranslations('Nav');
   const navItems = {
     '/': {
       name: t('home'),
@@ -21,7 +21,7 @@ export function Navbar() {
       name: t('music'),
     },
   };
-  
+
   return (
     <aside className="-ml-[8px] mb-5 tracking-tight">
       <div className="lg:sticky lg:top-20">

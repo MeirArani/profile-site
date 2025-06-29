@@ -1,39 +1,12 @@
-import { setupDevPlatform } from '@cloudflare/next-on-pages/next-dev';
 import createNextIntlPlugin from 'next-intl/plugin';
+
+import createMDX from '@next/mdx';
 
 const nextConfig = {
   logging: {
     fetches: {
       fullUrl: true,
     },
-  },
-  webpack: (config, options) => {
-    config.resolve.fallback = {
-      assert: false,
-      buffer: false,
-      console: false,
-      constants: false,
-      crypto: false,
-      domain: false,
-      events: false,
-      http: false,
-      https: false,
-      os: false,
-      path: false,
-      punycode: false,
-      process: false,
-      querystring: false,
-      stream: false,
-      string_decoder: false,
-      sys: false,
-      timers: false,
-      tty: false,
-      url: false,
-      util: false,
-      vm: false,
-      zlib: false,
-    };
-    return config;
   },
   headers() {
     return [
@@ -43,8 +16,8 @@ const nextConfig = {
       },
     ];
   },
+  pageExtensions: ['mdx', 'md', 'tsx', 'ts'],
 };
-
 
 const ContentSecurityPolicy = `
     default-src 'self' data: vercel.live;
@@ -88,13 +61,10 @@ const securityHeaders = [
   },
 ];
 
-//May break things!
-if (process.env.npm_lifecycle_event === 'pages:build') {
-  await setupDevPlatform();
-}
-
 const withNextIntl = createNextIntlPlugin('./src/i18n/requests.ts');
 
-export default withNextIntl(nextConfig);
+const withMDX = createMDX({
+  // Add markdown plugins here, as desired
+});
 
-//export default nextConfig;
+export default withMDX(withNextIntl(nextConfig));

@@ -5,33 +5,30 @@
     "build": "next build",
     "build-only": "next build",
     "start": "next start",
-    "setup": "node ./setup.mjs",
-    "pages:build": "npx @cloudflare/next-on-pages",
-    "preview": "npm run pages:build && wrangler pages dev",
-    "deploy": "npm run pages:build && wrangler pages deploy"
+    "setup": "node ./setup.mjs"
   },
   "dependencies": {
-    "@cloudflare/workerd-linux-64": "^1.20240815.0",
-    "@codesandbox/sandpack-react": "2.12.0",
-    "@tailwindcss/typography": "^0.5.10",
-    "@types/react": "18.2.55",
-    "@types/react-dom": "18.2.19",
-    "autoprefixer": "latest",
-    "esbuild-linux-64": "^0.15.18",
-    "eslint": "^8.57.0",
-    "eslint-config-next": "^14.2.5",
-    "geist": "1.2.2",
-    "next": "^14.2.5",
-    "next-intl": "^3.21.1",
-    "react": "18.2.0",
+    "@mdx-js/loader": "^3.1.0",
+    "@mdx-js/react": "^3.1.0",
+    "@next/mdx": "^15.3.4",
+    "@tailwindcss/typography": "^0.5.16",
+    "@types/react": "19.1.8",
+    "@types/react-dom": "19.1.6",
+    "autoprefixer": "^10.4.21",
+    "eslint": "9.30.0",
+    "eslint-config-next": "15.3.4",
+    "geist": "1.4.2",
+    "next": "^15.3.4",
+    "next-intl": "^4.3.1",
+    "npm-check-updates": "^18.0.1",
+    "react": "19.1.0",
     "react-audio-player-component": "^1.2.4",
-    "react-dom": "18.2.0",
-    "react-intersection-observer": "^9.13.0",
-    "sharp": "^0.33.5",
-    "tailwindcss": "^3.4.1",
-    "typescript": "5.3.3",
-    "vercel": "^34",
-    "wrangler": "^3.72.1"
+    "react-dom": "19.1.0",
+    "react-intersection-observer": "^9.16.0",
+    "sharp": "0.34.2",
+    "tailwindcss": "4.1.11",
+    "typescript": "5.8.3",
+    "vercel": "^44.2.7"
   },
   "browser": {
     "crypto": false,
@@ -39,10 +36,6 @@
   },
   "prettier": {
     "singleQuote": true
-  },
-  "devDependencies": {
-    "@cloudflare/next-on-pages": "^1.13.2",
-    "eslint-plugin-next-on-pages": "^1.13.2"
   },
   "resolutions": {
     "string-width": "4.2.3"

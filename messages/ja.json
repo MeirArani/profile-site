@@ -71,41 +71,70 @@
     },
     "Games": {
       "title": "Games",
+      "infoStock": {
+        "engine": "ゲームエンジン",
+        "genre": "ジャンル",
+        "control": "操作",
+        "year": "開発",
+        "role": "担当"
+      },
       "completed": "Completed Projects",
       "Tenjin": {
-        "title": "Tenjin Dash",
-        "desc": "You are the controller in this high-octane race through the streets of Tenjin! Inspired by exercise-oriented game design of <i>World Class Track Meet</i> and<i>Wii Fit</i>.",
-        "info": "<li><b>Game Engine:</b> Unity</li><li><b>Genre:</b> Racing/Arcade</li><b>Control Scheme:</b> JoyCons, Running<li><b>Release:</b> 2022</li>",
-        "topline": "An arcade-style racing experience inspired by the physical control schemes from games like <i>World Class Track Meet</i>.",
+        "title": "天神ダッシュ",
+        "desc": "『リングフィット アドベンチャー』のようにジョイコンを太モモの中心に合わせて、足踏みをしている二人プレイ可能なレーシングゲーム",
+        "info": {
+          "Engine": "Unity",
+          "Genre": "Racing/Arcade",
+          "Control": "Joy-Con・足踏み",
+          "Year": "2022",
+          "Role": "プログラマー・プランナー"
+        },
+        "topline": "『リングフィット アドベンチャー』のようにジョイコンを太モモの中心に合わせて、足踏みをしている二人プレイ可能なレーシングゲーム。ジョイコンのセンサーで足踏み振動の強度を測り、ゲーム内のキャラクタースピード操作できます。展示用なので、平均プレイに３０秒ぐらいかかります。",
         "background": {
-          "header": "Background",
-          "sub": "Prototype: <i>DinoDash!</i>",
-          "1": "<p><i>Tenjin Dash</i> came about in June 2022 at the request of my research supervisor, <kuma>Hiroyuki Matsuguma</kuma>. The project would quickly transform from 'simple prototype' to my first true game development challenge.</p><p>Tasked with designing a simple <serious>serious game</serious> aimed at children, I considered concepts centered on exercise and education before arriving at a rough design that combined the two.</p>",
-          "2": "<p>Originally themed around dinosaurs (who doesn't love a cute dino?), this prototype saw competing racers dual-wielding JoyCons: one strapped to their leg, with another held in hand. Players ran in-place to control the (on-rails) speed of their character—challenging their athletic ability—while using their handheld JoyCon to answer boost-granting quiz questions—rewarding academic expertise.</p><p>As the game was designed with small children in mind, questions were limited to simple arithmetic. But hey—<i>you</i> try answering math questions while sprinting like a madman!</p><p>After a few months of non-stop struggles against Unity, and following many sleepless nights spent red-eyed—bringing myself up to speed with C#'s many idiosyncrasies—<b><i>cough</i></b>—I mean er....<i>novel paradigms</i>—I finally put together a decent alpha build, which we showcased at local events in summer/fall 2022.</p>",
-          "3": "Since this was my first attempt at real game development...lets just say that the road was <b><i>veeeeery</i></b> bumpy. Although I had a CS degree and a lifetime of computer/game obsession under my belt...settling into the strategies and paradigms of game engines like Unity or Unreal is a far cry from the world I knew. Looking back on my early code now, let's just say it's probably for the best we leave those branches unpublished..."
+          "title": "概要",
+          "prose": ["指導教員から要望された研究室をPRするためのゲームを作るつもりで、ゼロから自分で開発し始めました。成功したプロトタイプの提示後、指導教員の下で、株式会社日建設計とコラボしました。メタバースに関わる『天神ダッシュ』という特別版を作り、「都市DXフォーラム IN 九州 2022」に展示しました。"]
         },
-        "evolution":
+        "development":
         {
-          "header": "Evolution",
-          "1": "<p>Thankfully, I would receive a good reason to refine the game just a few days after completion. My advisor had been working with <nikken>Nikken Sekkei</nikken>—the second largest architectural practice in the world—<tenjinArticle>on a project</tenjinArticle> to promote future technologies related to architecture, city planning, and urban design in Fukuoka's downtown district, Tenjin. Naturally, games, gamification, and serious games were some of the future technologies on the docket—leading me to join the project.</p><p>And so, <i>DinoDash</i> (<b>R.I.P.</b>) was quickly repurposed for the occasion—transforming into <i>Tenjin Dash</i>. The collaboration would culminate a few months later with a formal event held in Tenjin, leaving only a few weeks for me to rebuild the entire game from the <b><i>ground up.</i></b></p><p>The ensuing chaos would be another essential game development 'first' for me.</p>"
-        },
-        "big":
-        {
-          "header": "The Big Time",
-          "1": "<p>3D models of Tenjin were supplied by Nikken Sekkei, while I was left to design, develop, and present the game myself. Music was supplied by the great <shiloh>Shiloh Beeler.</shiloh></p><p>As the pressure grew, so did my ambitions. I incorporated an arcade-style 'attract screen,' designed my own cutscenes that introduced the race, and re-wrote much of the game's code to increase the fun-factor with some of that ol' <sega><i>Sega magic.</i></sega></p><p>And at last...it was time for the most feared concept in any game developer's mind: <b><i>demo time.</i></b> I, my advisor, and a few underclassmen-turned-assistants found ourselves at the <resola><i>Resola Hall</i></resola>, surrounded by a legion of salarymen clad in businesswear—the perfect attire for a brisk jog.</p>"
+          "title": "開発取組",
+          "cutscenes": {
+            "title": "Cutscenes",
+            "prose": [
+                "アーケードゲームのような魅力を高めるためのアトラクト・モードを創造し、レース前に天神を紹介するカットシーンも含めました。数日間の自分でゼロからカットシーン再生システム開発に取り組もうとした後に、柔軟性が高いCinemachine・Timelinesというシステムに変更して、カットシーンをすぐさま創造・編集できました。"
+            ]
+          },
+          "runners": {
+            "title": "Runner's High",
+            "prose": [
+              "足踏み振動を正確に測りづらいジョイコンのセンサーに、気の利いた計画を要しました。そして振動を粗雑に測り方に決め、そのデータに基づいてプレイのスピードを3段階に分けました。それから、何回やっても面白くて心躍り経験を生み出せるスピードシステムを図りました。簡潔に説明とは、"
+            ],
+            "bullets": [
+              " レースの間にゆっくり高めていくスピードの下限・上限で、プレイヤーにとって絶えず接戦・前よりも足速い感じを与えます。",
+              "負けている競走者が、勝っている競争者からの距離に比例してスピードブーストをもらうメカニズムで、短時間に遅くなっても逆転勝つ可能性を整えます。",
+              "競争者がしばらく負けていたら、スリップストリーム効果で小さいブーストをもらって、順位がしばらく変わらないつまらない形勢があったら、一進一退の試合を促します。"
+            ],
+            "afterBullet": [
+              "そのメカニズムを通して、楽しさがよりよく作られます。さらに、ジョイコンの測り方精度が低いので、データをめったに読み取れなくて、色々な事前に計算した公式が使えることで良化した性能を遂げました。"
+            ]
+          },
+          "arcade": {
+            "title": "Arcade Appeal",
+            "prose": ["アーケードゲームとしてデザインして、プログラミングの点から困難な問題となりました。アーケードゲームでの絶えず再起動性に取り組むために、プログラムの構造が有限オートマトン（または有限状態機械　英：Finite State Machine、FSM）を中心に開発されました。FSMではプログラム・資源・アセットを、簡単に分割できるメリットがあります。各ステートがコンポーネントを用いて表すとともに、共通のデータやステートの移行を管理するステート機械というシングルトンで、プログラムを合理化し、効率・性能も高めました。"]
+          },
+          "advanced": {
+            "title": "Advanced Development",
+            "prose": ["FSMに決めたおかげで、デバッグ過程を改良する特性が開発できました。例えば、ステートをいずれも飛ばしてバグ退治を能率化するスキップオプションや、入力をいつでも記録・再生してより速いテスト・反復することができます。"]
+          }
+          
         },
         "captions":
         {
-          "race": "The sweet taste of victory...",
-          "buggy": "Early builds were...a little buggy.",
-          "dino": "The kids love it!",
-          "exhibit": "The event's dress code might have made things a little awkward for players..."
-        },
-        "aftermath" :
-          {
-            "header": "Aftermath",
-            "1": "<p>After the event, the game was further polished and has become a mainstay at events for my advisor's Serious Games Project!</p><p>As a first-time development experience, <i>Tenjin Dash</i> was crucial in building my understanding of core game design concepts. The process also allowed me the space to experiment, giving me the chance to find my own techniques, strategies, and voice. It certainly is a rough project, but I'll forever be proud of my little dinos that could... </p>"
-          }
+          "race": "九大のオーペンキャンパスにライブデモ",
+          "buggy": "初期プロトタイプ",
+          "dino": "初期プロトタイプ",
+          "exhibit": "「都市DXフォーラム IN 九州 2022」の発表",
+          "demo": "「都市DXフォーラム IN 九州 2022」のデモ"
+        }
       },
       "prototypes": "Prototypes",
       "EnemyZero": {

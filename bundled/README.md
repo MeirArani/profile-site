@@ -1,1 +1,0 @@
-This folder contains the built output assets for the worker "profile-site" generated at 2024-08-21T03:09:21.918Z.

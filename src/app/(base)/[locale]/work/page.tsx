@@ -48,7 +48,7 @@ export default function Page({params: locale}) {
       
       
       <div className="">
-        <h1 className="w-fit font-medium font-semibold text-3xl mb-1 tracking-tighter">{t('Education.header')}</h1>
+        <h1 className="w-fit font-semibold text-3xl mb-1 tracking-tighter">{t('Education.header')}</h1>
         <div className="w-fit">
           <h2 className="w-fit font-medium text-2xl tracking-tighter">{t('Education.Kyushu.name')}</h2>
           <h3 className="w-fit font-medium text-xl tracking-tighter">{t('Education.Kyushu.dept')}</h3>
