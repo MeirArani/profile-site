@@ -69,7 +69,7 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       className={cx(
-        'text-black bg-gradient-to-r from-pink-300 via-violet-300 to-blue-300  ',
+        'text-black bg-linear-to-r from-pink-300 via-violet-300 to-blue-300  ',
         GeistSans.variable,
         GeistMono.variable
       )}
