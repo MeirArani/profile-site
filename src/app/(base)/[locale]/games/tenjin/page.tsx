@@ -7,17 +7,10 @@ import dinoFallback from '@/public/games/tenjin/dino_fallback.webp';
 import raceFallback from '@/public/games/tenjin/race_fallback.webp';
 import mainFallback from '@/public/games/tenjin/main_fallback.webp';
 import { FullAV } from '@/components/full-av';
-import { useTranslations, useMessages } from 'next-intl';
 import RichText from '@/components/rich-text';
-import { Link } from '@/i18n/navigation';
 import Test from './test.mdx';
 
 export default function Page({ params: locale }) {
-  const t = useTranslations('Games.Tenjin');
-  const stock = useTranslations('Games.infoStock');
-  const messages = useMessages();
-  const tenjin = messages.Games.Tenjin;
-  const info = Object.keys(tenjin.info);
   return <Test />;
 }
 //<section className="lg:mx-24 md:mx-16 xl:mx-72 2xl:mx-72">
