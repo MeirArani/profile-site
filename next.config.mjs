@@ -1,5 +1,3 @@
-import createNextIntlPlugin from 'next-intl/plugin';
-
 import createMDX from '@next/mdx';
 
 const nextConfig = {
@@ -61,10 +59,8 @@ const securityHeaders = [
   },
 ];
 
-const withNextIntl = createNextIntlPlugin('./src/i18n/requests.ts');
-
 const withMDX = createMDX({
   // Add markdown plugins here, as desired
 });
 
-export default withMDX(withNextIntl(nextConfig));
+export default withMDX(nextConfig);

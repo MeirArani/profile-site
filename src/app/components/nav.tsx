@@ -1,24 +1,22 @@
-import { useTranslations } from 'next-intl';
-import { Link } from '../../i18n/navigation';
+import Link from 'next/link';
 import LocaleSwitcher from './locale-switcher';
 
 export function Navbar() {
-  const t = useTranslations('Nav');
   const navItems = {
     '/': {
-      name: t('home'),
+      name: 'home',
     },
     '/work': {
-      name: t('work'),
+      name: 'work',
     },
     '/games': {
-      name: t('games'),
+      name: 'games',
     },
     '/photography': {
-      name: t('photo'),
+      name: 'photos',
     },
     '/music': {
-      name: t('music'),
+      name: 'music',
     },
   };
 
@@ -41,7 +39,6 @@ export function Navbar() {
                 </Link>
               );
             })}
-            <LocaleSwitcher className=""></LocaleSwitcher>
           </div>
         </nav>
       </div>

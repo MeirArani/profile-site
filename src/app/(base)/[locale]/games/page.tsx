@@ -1,41 +1,57 @@
-'use client'
+('');
 
-import tenjinBackground from '@/public/games/tenjin/tenjin_background.webp'
+import tenjinBackground from '@/public/games/tenjin/tenjin_background.webp';
 import { FullBanner } from '@/components/wide-poster';
-import {useTranslations} from 'next-intl';
-import EZBackground from "@/public/games/ez/bannerbackground.webp"
-import BeautyBackground from "@/public/games/beauty/KeyProto.webp"
-import { EnemyZeroLogo, TenjinLogo, BeautyLogo } from "@/components/logos";
+import { useTranslations } from 'next-intl';
+import EZBackground from '@/public/games/ez/bannerbackground.webp';
+import BeautyBackground from '@/public/games/beauty/KeyProto.webp';
+import { EnemyZeroLogo, TenjinLogo, BeautyLogo } from '@/components/logos';
 
-export const dynamic = 'force-dynamic'
-export const runtime = 'edge';
-
-export default function Page({params: locale}) {
-    const t = useTranslations('Games');
-    return (
-        <section>
-        <h1 className="text-5xl">Games</h1>
+export default function Page({ params: locale }) {
+  const t = useTranslations('Games');
+  return (
+    <section>
+      <h1 className="text-5xl">Games</h1>
+      <div>
+        <h2 className="font-light text-3xl">Completed Projects</h2>
+        <FullBanner
+          href="/games/tenjin"
+          backgroundImg={tenjinBackground}
+          logo={<TenjinLogo />}
+          title="Tenjin"
+        ></FullBanner>
+      </div>
+      <div>
+        <h2 className="font text-4xl">Prototypes</h2>
         <div>
-            <h2 className="font-light text-3xl">Completed Projects</h2>
-            <FullBanner href="/games/tenjin" backgroundImg={tenjinBackground} logo={<TenjinLogo/>} title="Tenjin"></FullBanner>
+          <FullBanner
+            href="/games/enemyzero"
+            backgroundImg={EZBackground}
+            logo={<EnemyZeroLogo />}
+            title="EnemyZero"
+          ></FullBanner>
+          <FullBanner
+            href="/games/beauty"
+            backgroundImg={BeautyBackground}
+            logo={<BeautyLogo />}
+            title="Beauty"
+          ></FullBanner>
         </div>
+      </div>
+      <div>
+        <h2 className="font text-4xl">Concepts</h2>
         <div>
-            <h2 className="font text-4xl">Prototypes</h2>
-            <div>
-                <FullBanner href="/games/enemyzero" backgroundImg={EZBackground} logo={<EnemyZeroLogo/>} title="EnemyZero"></FullBanner>
-                <FullBanner href="/games/beauty" backgroundImg={BeautyBackground} logo={<BeautyLogo/>} title="Beauty"></FullBanner>
-            </div>
+          <h3 className="font font-light text-3xl">
+            <i>Grace Beneath The Pines</i>
+          </h3>
+          <h3 className="font font-light text-3xl">
+            <i>Corporate Ladder</i>
+          </h3>
+          <h3 className="font font-light text-3xl">
+            <i>Bad Houses</i>
+          </h3>
         </div>
-        <div>
-            <h2 className="font text-4xl">Concepts</h2>
-            <div>
-                <h3 className="font font-light text-3xl"><i>Grace Beneath The Pines</i></h3>
-                <h3 className="font font-light text-3xl"><i>Corporate Ladder</i></h3>
-                <h3 className="font font-light text-3xl"><i>Bad Houses</i></h3>
-            </div>
-        </div>
-
+      </div>
     </section>
-
   );
 }

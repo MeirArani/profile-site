@@ -4,17 +4,7 @@ import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
 import { Navbar } from '@/components/nav';
 
-import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
-import { routing } from '@/i18n/routing';
-import { locales } from '@/i18n/config';
-
-export const dynamic = 'force-dynamic';
-export const runtime = 'edge';
-
-export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
-}
 
 export const metadata: Metadata = {
   metadataBase: new URL('http://localhost:3000'),
@@ -61,10 +51,8 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 }) {
-  const locale = await params;
-  if (!hasLocale(routing.locales, locale)) {
-    notFound();
-  }
+  const { locale } = await params;
+
   return (
     <html
       lang={locale}
@@ -117,12 +105,10 @@ export default async function LocaleLayout({
         <meta name="theme-color" content="#ffffff" />
       </head>
       <body className="antialiased max-w-full min-h-screen mb-8 flex flex-col md:flex-row mx-4 mt-2 sm:mx-8 md:mx-10 lg:mx-18">
-        <NextIntlClientProvider>
-          <main className="flex-auto min-w-0 mt-8 flex flex-col px-2 md:px-0">
-            <Navbar />
-            {children}
-          </main>
-        </NextIntlClientProvider>
+        <main className="flex-auto min-w-0 mt-8 flex flex-col px-2 md:px-0">
+          <Navbar />
+          {children}
+        </main>
       </body>
     </html>
   );

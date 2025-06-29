@@ -11,6 +11,7 @@ export default {
   theme: {
     fontFamily: {},
     extend: {
+      //TODO: Remove unneeded extends (should be in globals.css)
       fontFamily: {
         sans: ['var(--font-geist-sans)'],
         mono: ['var(--font-geist-mono)'],

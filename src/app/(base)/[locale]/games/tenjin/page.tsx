@@ -1,4 +1,4 @@
-'use client';
+('');
 
 import exhibitFallback from '@/public/games/tenjin/exhibit_fallback.webp';
 import panelFallback from '@/public/games/tenjin/panel_fallback.webp';
@@ -11,8 +11,7 @@ import { useTranslations, useMessages } from 'next-intl';
 import RichText from '@/components/rich-text';
 import { Link } from '@/i18n/navigation';
 import Test from './test.mdx';
-export const dynamic = 'force-dynamic';
-export const runtime = 'edge';
+
 export default function Page({ params: locale }) {
   const t = useTranslations('Games.Tenjin');
   const stock = useTranslations('Games.infoStock');

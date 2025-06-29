@@ -1,4 +1,4 @@
-'use client';
+('');
 import Image from 'next/image';
 
 import earlyFallback from '@/public/games/ez/early_fallback.webp';
@@ -15,8 +15,6 @@ import { setRequestLocale } from 'next-intl/server';
 import { EnemyZeroLogo } from '@/components/logos';
 import RichText from '@/components/rich-text';
 import { useTranslations } from 'next-intl';
-export const dynamic = 'force-dynamic';
-export const runtime = 'edge';
 
 export default function Page({ params: locale }) {
   const t = useTranslations('Games.EnemyZero');

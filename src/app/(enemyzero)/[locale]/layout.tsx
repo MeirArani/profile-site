@@ -9,9 +9,6 @@ import { getMessages } from 'next-intl/server';
 import { locales } from 'src/i18n/config';
 import { setRequestLocale } from 'next-intl/server';
 
-export const dynamic = 'force-dynamic';
-export const runtime = 'edge';
-
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }

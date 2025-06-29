@@ -1,6 +1,4 @@
-'use client'
-export const dynamic = 'force-dynamic'
-export const runtime = 'edge';
+('');
 
 export default function NotFound() {
   return (
@@ -9,7 +7,8 @@ export default function NotFound() {
         The best of things are yet unknown.
       </h1>
       <p className="prose prose-neutral">
-        If you expected to see something here, please <a href="mailto:myrrh@laughingstock.me">let me know.</a>
+        If you expected to see something here, please{' '}
+        <a href="mailto:myrrh@laughingstock.me">let me know.</a>
       </p>
     </section>
   );
