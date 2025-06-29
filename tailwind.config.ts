@@ -1,29 +1,32 @@
 import type { Config } from 'tailwindcss';
 import typography from '@tailwindcss/typography';
-const plugin = require('tailwindcss/plugin')
+const plugin = require('tailwindcss/plugin');
 
 export default {
-  content: ['./src/app/**/*.{ts,tsx}', './content/**/*.mdx', './public/**/*.svg'],
+  content: [
+    './src/app/**/*.{ts,tsx}',
+    './content/**/*.mdx',
+    './public/**/*.svg',
+  ],
   theme: {
-    fontFamily: {
-    },
+    fontFamily: {},
     extend: {
       fontFamily: {
         sans: ['var(--font-geist-sans)'],
         mono: ['var(--font-geist-mono)'],
-        'sans-ja': ["IBM Plex Sans JP, sans-serif"],
-        'mono-ja': ["M PLUS 1 Code, monospace"],
-        'tenjin': ["Reggae One"],
-        'enemyzero': ["Smooch Sans, sans-serif"],
-        'baskervvile': ["Baskervville, serif"],
-        'beauty': ["Eagle Lake, serif"]
+        'sans-ja': ['IBM Plex Sans JP, sans-serif'],
+        'mono-ja': ['M PLUS 1 Code, monospace'],
+        tenjin: ['Reggae One'],
+        enemyzero: ['Smooch Sans, sans-serif'],
+        baskervvile: ['Baskervville, serif'],
+        beauty: ['Eagle Lake, serif'],
       },
       screens: {
         '3xl': '1920px',
         '4xl': '2560px',
         '5xl': '3840px',
-        'xs': {'max': '400px'},
-     },
+        xs: { max: '400px' },
+      },
       typography: {
         quoteless: {
           css: {
@@ -52,7 +55,7 @@ export default {
           }),
         },
         { values: theme('textShadow') }
-      )
+      );
     }),
-  ]
+  ],
 } satisfies Config;

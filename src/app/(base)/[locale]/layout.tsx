@@ -7,7 +7,7 @@ import { Navbar } from '@/components/nav';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
-import { locales } from 'src/i18n/config';
+import { locales } from '@/i18n/config';
 
 export const dynamic = 'force-dynamic';
 export const runtime = 'edge';
@@ -112,6 +112,7 @@ export default async function LocaleLayout({
           href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap"
           rel="stylesheet"
         ></link>
+        <link href="/dist/styles.css" rel="stylesheet"></link>
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </head>
