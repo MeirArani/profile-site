@@ -1,5 +1,11 @@
 @import 'tailwindcss';
 
+@theme {
+  --breakpoint-3xl: 1920px;
+  --breakpoint-4xl: 2560px;
+  --breakpoint-5xl: 3840px;
+}
+
 @layer base {
   html {
     @apply 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-5xl;
