@@ -2,13 +2,11 @@
 
 import tenjinBackground from '@/public/games/tenjin/tenjin_background.webp';
 import { FullBanner } from '@/components/wide-poster';
-import { useTranslations } from 'next-intl';
 import EZBackground from '@/public/games/ez/bannerbackground.webp';
 import BeautyBackground from '@/public/games/beauty/KeyProto.webp';
 import { EnemyZeroLogo, TenjinLogo, BeautyLogo } from '@/components/logos';
 
 export default function Page({ params: locale }) {
-  const t = useTranslations('Games');
   return (
     <section>
       <h1 className="text-5xl">Games</h1>

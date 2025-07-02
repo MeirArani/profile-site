@@ -1,0 +1,31 @@
+# Background
+
+It was only days after arriving in Japan that I was asked by my research supervisor to create a game promoting his lab—kickstarting the solo-development journey that eventually led to Tenjin Dash. After impressing my professor with a quick prototype, we worked with the Japanese architectural firm Nikken Sekkei to produce a special edition of the game, which was show-cased at an event held Fukuoka (都市 DX フォーラム IN 九州 2022) later that year.
+
+# Development
+
+## Cutscenes
+
+I wanted to give the game a fun 'arcade' vibe a-la the classic Sega racing games of old, so I developed an arcade-y attract screen as well as an intro cutscene that establishes the racing environment (downtown Tenjin) in a charming way. I tried implementing a cutscene development stack myself from scratch, which quickly turned out to be a bad idea. Instead, I made use of Uni-ty's own CineMachine and Timeline features, which allowed me to quickly design and iterate cutscenes. I ended up with high-quality, expressive cutscenes within hours once I learned how to manage the system.
+
+## Runner's High
+
+Careful planning and clever design were needed to get good sensor data out of the Joy-Con—which isn't as good at reading motions as you might imagine. Or to be more correct, I should say that accurately sensing someone's running speed is a harder-than-you-think prob-lem (and an area of active research). Even if I had the passion and interest in solving this problem, I certainly wasn't going to develop an entire game at the same level of quality that required an entire team at Nintendo. But as a novice of practical game design, I started my quest by struggling to accurately measure running speed. After weeks of experiments and countless design iterations, I realized a harsh truth:",
+
+**_Accurately reading motion data isn't just hard for developers, it isn't fun for players either._**
+
+This epiphany gave me the motivation I needed to craft my final design, which approximates motion data and emphasizes fun and interesting gameplay over accurate speed readings. To explain the system simply:
+
+- Players have invisible maximum and minimum speed caps. If a player is moving, then they will run at the minimum speed, no matter how slow they might be moving in real life. These speeds increase slowly as the race continues on--growing a sense of excitement as players barrel towards the finish line.
+- The losing player receives a hidden speed boost depending on how far they are behind the winning player. This ensures players always have a chance to take the lead, even if they lag for a few moments near the start of the race.
+- The longer a player has been losing, the greater a speed boost they receive. This ensures that races avoid boring and static outcomes where one player leads for the entire match. As long as the losing player is putting in some effort, they will either stay right behind the winning player or overtake them given an opportune moment—allowing a tight, 'neck-and-neck' feeling of excitement the whole race.
+
+After polishing up these mechanics (and many others), I finally had a system that was faster, more fun, and way more 'arcade-y' than anything I developed when trying to approximate realism. Lesson learned.
+
+## Arcade Appeal
+
+The design of arcade games can sometimes be a real pain, especially from a programming perspective. Arcade titles must run endlessly and loop cleanly back to the start after each playthrough—as if the game had never been played at all. To streamline developing this type of game, I structured my code around a Finite State Machine design, which allowed me to segregate the game's flow into clear 'states' that work independently of each other. Each state (start_menu, pre_roll, race, etc.) was designed as its own component, each of which hooks into a master state machine component—which manages the game's current state and oversees transitions and data transmission between states—allowing me to iterate designs and debug problems at a blazing fast pace.
+
+## Advanced Development
+
+My FSM design also empowered faster iteration and blazing fast debugging. For example, I quickly developed a special set of debugger options that can jump to any state instantly. This—combined with a system that allowed me to record and playback player inputs on-the-fly—made debugging a breeze. Although I definitely would have lost a few more pounds if I had ran a full race each time I needed to fix a problem…

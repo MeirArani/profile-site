@@ -1,14 +1,14 @@
 ('');
 
-import exhibitFallback from '@/public/games/tenjin/exhibit_fallback.webp';
-import panelFallback from '@/public/games/tenjin/panel_fallback.webp';
-import buggyFallback from '@/public/games/tenjin/buggy_fallback.webp';
-import dinoFallback from '@/public/games/tenjin/dino_fallback.webp';
-import raceFallback from '@/public/games/tenjin/race_fallback.webp';
-import mainFallback from '@/public/games/tenjin/main_fallback.webp';
+import exhibitFallback from '@/public/gameData/tenjin/exhibit_fallback.webp';
+import panelFallback from '@/public/gameData/tenjin/panel_fallback.webp';
+import buggyFallback from '@/public/gameData/tenjin/buggy_fallback.webp';
+import dinoFallback from '@/public/gameData/tenjin/dino_fallback.webp';
+import raceFallback from '@/public/gameData/tenjin/race_fallback.webp';
+import mainFallback from '@/public/gameData/tenjin/main_fallback.webp';
 import { FullAV } from '@/components/full-av';
 import RichText from '@/components/rich-text';
-import Test from './test.mdx';
+import Test from './en.mdx';
 
 export default function Page({ params: locale }) {
   return <Test />;
