@@ -16,7 +16,7 @@
     "paths": {
       "@/components/*": ["src/app/components/*"],
       "@/public/*": ["public/*"],
-      "@/pages/*": ["src/app/components/pages/*"],
+      "@/pages/*": ["src/app/(base)/[locale]/*"],
       "@/photos/*": ["public/assets/photos/*"],
       "@/i18n/*": ["src/i18n/*"],
       "@/messages/*": ["messages/*"]

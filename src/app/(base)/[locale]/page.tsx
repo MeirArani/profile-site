@@ -32,7 +32,7 @@ export default async function Page({
           classnamemobile="w-full"
         ></ResponsiveImage>
       </div>
-      <h1 className="font-medium text-3xl mb-4 tracking-tighter text-center w-fit">
+      <h1 className="font-medium color-blue text-3xl mb-4 tracking-tighter text-center w-fit">
         {messages.Home.followUp}
       </h1>
 
