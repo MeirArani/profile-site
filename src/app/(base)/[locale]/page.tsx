@@ -1,5 +1,5 @@
-import desktopImage from '@/public/photos/multiples1.webp';
-import mobileImage from '@/public/hanami.webp';
+import desktopImage from '@/photos/photography/multiples1.webp';
+import mobileImage from '@/photos/photography/hanami.webp';
 import { ResponsiveImage } from '@/components/responsive-image';
 import { ArrowIcon } from '@/components/arrow-icon';
 import { getMessages } from './messages';

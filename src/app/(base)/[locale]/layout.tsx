@@ -66,24 +66,24 @@ export default async function LocaleLayout({
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/utilData/apple-touch-icon.png"
+          href="/apple-touch-icon.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/utilData/favicon-32x32.png"
+          href="/favicon-32x32.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/utilData/favicon-16x16.png"
+          href="/favicon-16x16.png"
         />
-        <link rel="manifest" href="/utilData/site.webmanifest" />
+        <link rel="manifest" href="/site.webmanifest" />
         <link
           rel="mask-icon"
-          href="/utilData/safari-pinned-tab.svg"
+          href="/safari-pinned-tab.svg"
           color="#5bbad5"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />

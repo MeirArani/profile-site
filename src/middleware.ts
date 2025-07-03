@@ -9,14 +9,19 @@ let defaultLocale = 'en';
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
-  const isPublic = [
+  const publicContent = [
     '/fontData',
     '/gameData',
-    '/musicData', //TODO: Fix
+    '/musicData', 
     '/photoData',
     '/utilData',
     // Your other files in `public`
-  ].includes(pathname);
+  ];
+
+  const isPublic = publicContent.some(content => pathname.includes(content));
+
+  //console.log(pathname);
+  console.log(pathname);
 
   const pathnameHasLocale = locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
@@ -42,7 +47,7 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/((?!_next).*)'],
+  matcher: "/((?!api|static|.*\\..*|_next).*)",
 };
 
 function getLocale(headers: Headers) {
