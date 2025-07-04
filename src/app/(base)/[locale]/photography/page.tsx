@@ -21,7 +21,7 @@ import someday from '@/photos/someday.webp';
 
 import { useTranslations } from 'next-intl';
 
-import { Photo } from '@/components/photo';
+import { Photo } from 'components/photo';
 
 export default function Page({ params: locale }) {
   const t = useTranslations('Photos');

@@ -1,6 +1,6 @@
 ('');
 
-import { FullAV } from '@/components/full-av';
+import { FullAV } from 'components/full-av';
 import { useTranslations } from 'next-intl';
 import cooler from '@/public/games/ladder/cooler.webp';
 

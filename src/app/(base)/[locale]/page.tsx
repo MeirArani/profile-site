@@ -1,7 +1,7 @@
 import desktopImage from '@/photos/photography/multiples1.webp';
 import mobileImage from '@/photos/photography/hanami.webp';
-import { ResponsiveImage } from '@/components/responsive-image';
-import { ArrowIcon } from '@/components/arrow-icon';
+import { ResponsiveImage } from 'components/responsive-image';
+import { ArrowIcon } from 'components/arrow-icon';
 import { getMessages } from './messages';
 
 export default async function Page({

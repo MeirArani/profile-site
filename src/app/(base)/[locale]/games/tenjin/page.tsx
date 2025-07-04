@@ -4,12 +4,42 @@ import buggyFallback from '@/public/games/tenjin/buggy_fallback.webp';
 import dinoFallback from '@/public/games/tenjin/dino_fallback.webp';
 import raceFallback from '@/public/games/tenjin/race_fallback.webp';
 import mainFallback from '@/photos/games/tenjin/main_fallback.webp';
-import { FullAV } from '@/components/full-av';
-import RichText from '@/components/rich-text';
+import { FullAV } from 'components/full-av';
+import RichText from 'components/rich-text';
 import TenjinEN from './en.mdx';
+import { MDXRemote, MDXRemoteOptions } from 'next-mdx-remote-client/rsc';
+import { getSource } from '@/utils/file';
+import { getMarkdownExtension } from '@/utils';
+import fallback from '@/photos/games/tenjin/main_fallback.webp';
+const components = {
+  FullAV,
+  wrapper: ({ children }) => <div className="mdx-wrapper">{children}</div>,
+};
+export default async function Page({ params: locale }) {
+  const file = 'games/tenjin/en.mdx';
+  const format = getMarkdownExtension(file);
+  const source = await getSource(file);
 
-export default function Page({ params: locale }) {
-  return <TenjinEN />;
+  const options: MDXRemoteOptions = {
+    mdxOptions: {
+      // ...
+    },
+    scope: {
+      mainFallback: fallback,
+    },
+  };
+
+  if (!source) {
+    return <div>Something's gone horribly wrong.</div>;
+  }
+
+  return (
+    <MDXRemote
+      source={source}
+      options={options}
+      components={components}
+    ></MDXRemote>
+  );
 }
 //<section className="lg:mx-24 md:mx-16 xl:mx-72 2xl:mx-72">
 //   <h1 className={`font-tenjin text-5xl mb-6`}>{t('title')}</h1>

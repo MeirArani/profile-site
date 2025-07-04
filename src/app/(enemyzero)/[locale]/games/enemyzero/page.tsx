@@ -10,10 +10,10 @@ import walkingFallback from '@/public/games/ez/walking_fallback.webp';
 import uvImage from '@/public/games/ez/model_uvs.webp';
 import mapSketch from '@/public/games/ez/map_sketch.webp';
 
-import { FullAV } from '@/components/full-av';
+import { FullAV } from 'components/full-av';
 import { setRequestLocale } from 'next-intl/server';
-import { EnemyZeroLogo } from '@/components/logos';
-import RichText from '@/components/rich-text';
+import { EnemyZeroLogo } from 'components/logos';
+import RichText from 'components/rich-text';
 import { useTranslations } from 'next-intl';
 
 export default function Page({ params: locale }) {

@@ -1,8 +1,8 @@
 ('');
 
-import { FullAV } from '@/components/full-av';
+import { FullAV } from 'components/full-av';
 import { useTranslations } from 'next-intl';
-import { BeautyLogo } from '@/components/logos';
+import { BeautyLogo } from 'components/logos';
 import BeautyBackground from '@/public/games/beauty/KeyProto.webp';
 import beautyArt from '@/public/games/beauty/beautyTest.webp';
 import beastArt from '@/public/games/beauty/beast.webp';

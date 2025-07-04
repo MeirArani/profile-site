@@ -1,3 +1,4 @@
+'use client';
 import Image, { StaticImageData } from 'next/image';
 import { FallbackImage } from './fallback-image';
 import { useInView } from 'react-intersection-observer';

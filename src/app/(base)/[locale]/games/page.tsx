@@ -1,10 +1,10 @@
 ('');
 
 import tenjinBackground from '@/public/games/tenjin/tenjin_background.webp';
-import { FullBanner } from '@/components/wide-poster';
+import { FullBanner } from 'components/wide-poster';
 import EZBackground from '@/public/games/ez/bannerbackground.webp';
 import BeautyBackground from '@/public/games/beauty/KeyProto.webp';
-import { EnemyZeroLogo, TenjinLogo, BeautyLogo } from '@/components/logos';
+import { EnemyZeroLogo, TenjinLogo, BeautyLogo } from 'components/logos';
 
 export default function Page({ params: locale }) {
   return (
