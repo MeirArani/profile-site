@@ -1,6 +1,7 @@
 import createMDX from '@next/mdx';
 
 const nextConfig = {
+  turbopack: {},
   logging: {
     fetches: {
       fullUrl: true,

@@ -19,6 +19,7 @@
       "@/public/*": ["public/*"],
       "@/pages/*": ["src/app/(base)/[locale]/*"],
       "@/photos/*": ["public/assets/photos/*"],
+      "@/videos/*": ["public/assets/videos/*"],
       "@/i18n/*": ["src/i18n/*"],
       "@/messages/*": ["messages/*"]
     },

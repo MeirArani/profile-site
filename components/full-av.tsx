@@ -4,7 +4,13 @@ import { FallbackImage } from './fallback-image';
 import { useInView } from 'react-intersection-observer';
 import React from 'react';
 
-export function FullAV(props) {
+export function FullAV(props: {
+  src: string;
+  fallback: StaticImageData;
+  className: string;
+  dark: boolean;
+  caption: string;
+}) {
   const { ref, inView, entry } = useInView({
     /* Optional options */
     threshold: 0,
@@ -25,7 +31,7 @@ export function FullAV(props) {
       muted
       autoPlay={inView}
       playsInline
-      src={props.location}
+      src={props.src}
       className="w-full md:rounded-xl not-prose"
       poster={props.fallback.src}
     >
@@ -33,7 +39,7 @@ export function FullAV(props) {
     </video>
   );
 
-  const content = props.location != null ? video : image;
+  const content = props.src != null ? video : image;
 
   return (
     <div

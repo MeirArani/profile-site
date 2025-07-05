@@ -1,16 +1,16 @@
-import exhibitFallback from '@/public/games/tenjin/exhibit_fallback.webp';
-import panelFallback from '@/public/games/tenjin/panel_fallback.webp';
 import buggyFallback from '@/public/games/tenjin/buggy_fallback.webp';
 import dinoFallback from '@/public/games/tenjin/dino_fallback.webp';
-import raceFallback from '@/public/games/tenjin/race_fallback.webp';
-import mainFallback from '@/photos/games/tenjin/main_fallback.webp';
 import { FullAV } from 'components/full-av';
 import RichText from 'components/rich-text';
 import TenjinEN from './en.mdx';
 import { MDXRemote, MDXRemoteOptions } from 'next-mdx-remote-client/rsc';
 import { getSource } from '@/utils/file';
 import { getMarkdownExtension } from '@/utils';
-import fallback from '@/photos/games/tenjin/main_fallback.webp';
+import mainFallback from '@/photos/games/tenjin/main_fallback.webp';
+import raceFallback from '@/photos/games/tenjin/race_fallback.webp';
+import panelFallback from '@/photos/games/tenjin/panel_fallback.webp';
+import exhibitFallback from '@/photos/games/tenjin/exhibit_fallback.webp';
+
 const components = {
   FullAV,
   wrapper: ({ children }) => <div className="mdx-wrapper">{children}</div>,
@@ -25,7 +25,14 @@ export default async function Page({ params: locale }) {
       // ...
     },
     scope: {
-      mainFallback: fallback,
+      mainFallback: mainFallback,
+      raceFallback: raceFallback,
+      panelFallback: panelFallback,
+      exhibitFallback: exhibitFallback,
+      mainVideo: '/assets/videos/games/tenjin/intro.webm',
+      raceVideo: '/assets/videos/games/tenjin/liveRace.webm',
+      panelVideo: '/assets/videos/games/tenjin/panel.webm',
+      exhibitVideo: '/assets/videos/games/tenjin/exhibit.webm',
     },
   };
 

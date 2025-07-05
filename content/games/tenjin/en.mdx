@@ -1,3 +1,5 @@
+<FullAV src={mainVideo} fallback={mainFallback} />
+
 # Background
 
 It was only days after arriving in Japan that I was asked by my research
@@ -7,8 +9,6 @@ quick prototype, we worked with the Japanese architectural firm Nikken Sekkei to
 produce a special edition of the game, which was show-cased at an event held
 Fukuoka (都市 DX フォーラム IN 九州 2022) later that year.
 
-    <FullAV location="/assets/videos/games/tenjin/tenjindash.webm" fallback={mainFallback} />
-
 # Development
 
 ## Cutscenes
@@ -16,6 +16,8 @@ Fukuoka (都市 DX フォーラム IN 九州 2022) later that year.
 I wanted to give the game a fun 'arcade' vibe a-la the classic Sega racing games of old, so I developed an arcade-y attract screen as well as an intro cutscene that establishes the racing environment (downtown Tenjin) in a charming way. I tried implementing a cutscene development stack myself from scratch, which quickly turned out to be a bad idea. Instead, I made use of Uni-ty's own CineMachine and Timeline features, which allowed me to quickly design and iterate cutscenes. I ended up with high-quality, expressive cutscenes within hours once I learned how to manage the system.
 
 ## Runner's High
+
+<FullAV src={raceVideo} fallback={raceFallback} />
 
 Careful planning and clever design were needed to get good sensor data out of the Joy-Con—which isn't as good at reading motions as you might imagine. Or to be more correct, I should say that accurately sensing someone's running speed is a harder-than-you-think prob-lem (and an area of active research). Even if I had the passion and interest in solving this problem, I certainly wasn't going to develop an entire game at the same level of quality that required an entire team at Nintendo. But as a novice of practical game design, I started my quest by struggling to accurately measure running speed. After weeks of experiments and countless design iterations, I realized a harsh truth:",
 
@@ -31,8 +33,12 @@ After polishing up these mechanics (and many others), I finally had a system tha
 
 ## Arcade Appeal
 
+<FullAV src={panelVideo} fallback={panelFallback} />
+
 The design of arcade games can sometimes be a real pain, especially from a programming perspective. Arcade titles must run endlessly and loop cleanly back to the start after each playthrough—as if the game had never been played at all. To streamline developing this type of game, I structured my code around a Finite State Machine design, which allowed me to segregate the game's flow into clear 'states' that work independently of each other. Each state (start_menu, pre_roll, race, etc.) was designed as its own component, each of which hooks into a master state machine component—which manages the game's current state and oversees transitions and data transmission between states—allowing me to iterate designs and debug problems at a blazing fast pace.
 
 ## Advanced Development
+
+<FullAV src={exhibitVideo} fallback={exhibitFallback} />
 
 My FSM design also empowered faster iteration and blazing fast debugging. For example, I quickly developed a special set of debugger options that can jump to any state instantly. This—combined with a system that allowed me to record and playback player inputs on-the-fly—made debugging a breeze. Although I definitely would have lost a few more pounds if I had ran a full race each time I needed to fix a problem…

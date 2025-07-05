@@ -10,9 +10,10 @@
   --font-sans-ja: 'IBM Plex Sans JP, sans-serif';
   --font-mono-ja: 'M PLUS 1 Code, monospace';
   --font-tenjin: 'Reggae One';
-  --font-enemyzero: 'Smooch Sans, sans-serif';
-  --font-Baskervville: 'Baskervville, serif';
-  --font-beauty: 'Eagle Lake, serif';
+  --font-enemyzero: 'Smooch Sans', system-ui;
+  --font-Baskervville: 'Baskervville', system-ui;
+  --font-beauty: 'Eagle Lake', system-ui;
+  --font-reggae: 'Reggae One', system-ui;
 }
 
 @layer base {
